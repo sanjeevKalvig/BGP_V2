@@ -2,8 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: 'Ethnocentric';
+  /* This is the name you'll use in Tailwind config */
+  src: url('fonts/ethnocentric.woff') format('woff');
+  /* Path relative to public/ */
+  font-weight: 700;
+  /* Or whatever weight your specific file represents (e.g., normal, bold) */
+  font-style: normal;
+  font-display: swap;
+  /* Best practice for performance */
+}
+
 html ,body #root{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: black;
+  color: white;
+  font-family: Montserrat, sans-serif;
 }
