@@ -12,23 +12,47 @@ const HeroSection = () => {
         className="z-0 absolute -top-11"
       />
 
-       {/* Left vertical label + dots */}
-        <span
-          className="rotate-180 fixed top-[30%]  [writing-mode:vertical-rl] tracking-[0.3em] text-xs text-white/60"
-          aria-hidden="true"
-        >
-          BHARATVA GRAND PRIX
-        </span>
-        <div className="flex flex-col gap-2 fixed top-[40%] right-[4rem]">
-          <button className="h-3 w-3 rounded-full bg-white/20 border border-white/30" aria-label="Section 1" />
-          <button className="h-3 w-3 rounded-full bg-white/20 border border-white/30" aria-label="Section 2" />
-          <button className="h-3 w-3 rounded-full bg-white/20 border border-white/30" aria-label="Section 3" />
+      {/* Left vertical label + dots */}
+      <span
+        className="rotate-180 fixed top-[35%] flex flex-col-1 gap-4 justify-center items-center  
+        [writing-mode:vertical-rl] tracking-[0.3em] text-xs text-white/60 font-ethnocentric"
+        aria-hidden="true"
+      >
+        <div className="flex flex-col-1  rotate-180">
+          <img src="/X.svg" alt="icon" className="w-4 h-6" />
+          <img src="/facebook.svg" alt="icon" className="w-4 h-6" />
+          <img src="/Instagram.svg" alt=" icon" className="w-4 h-6" />
         </div>
-      
+        <p className="opacity-50 lg:text-[12px]"> BHARATVA GRAND PRIX</p>
+      </span>
+      <div className="flex flex-col gap-4 justify-center items-center fixed top-[40%] right-[4rem]">
+        <button
+          className="h-3 w-3 rounded-full bg-white/20 border border-white/30"
+          aria-label="Section 1"
+        />
+        <button
+          className="h-3 w-3 rounded-full bg-white/20 border border-white/30"
+          aria-label="Section 2"
+        />
+        <button
+          className="h-3 w-3 rounded-full bg-white/20 border border-white/30"
+          aria-label="Section 3"
+        />
+        <button
+          className="h-3 w-3 rounded-full bg-white/20 border border-white/30"
+          aria-label="Section 4"
+        />
+        <button
+          className="h-3 w-3 rounded-full bg-white/20 border border-white/30"
+          aria-label="Section 5"
+        />
+        <img src="/arrowdown.svg" alt="" />
+      </div>
+
       {/* Main content */}
       <div className="relative mx-auto  lg:px-[4rem]  lg:py-20  ">
         {/* Left: Headline + copy */}
-        <div className=" z-30 xl:left-[6rem] top-[15%] absolute space-y-6">
+        <div className=" z-30 xl:left-[6rem] top-[16%] absolute space-y-2">
           {/* Kicker */}
           <div className="flex flex-col ">
             <p className="text-xs md:text-sm tracking-[0.25em] xl:text-[26px]  uppercase">
@@ -61,9 +85,9 @@ const HeroSection = () => {
         </div>
 
         {/* Right: Info cards */}
-        <div className="absolute z-30 right-10 top-[45%] flex flex-col justify-items-start gap-4 ">
+        <div className="absolute z-30 right-[8rem] top-[44%] flex flex-col justify-items-start gap-4 ">
           <div className="flex justify-center items-center  gap-3">
-            <img src="/herolocicon.svg" alt="" className="h-[70px] w-[60px]" />
+            <img src="/herolocicon.svg" alt="" className="h-[50px] w-[50px]" />
             <div>
               <p className="text-sm md:text-base xl:text-[13px] font-semibold">
                 Buddh International <br /> Circuit, Greater Noida
@@ -71,7 +95,7 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="flex items-center  gap-3">
-            <img src="/heroclenicon.svg" alt="" className="h-[60px] w-[60px]" />
+            <img src="/heroclenicon.svg" alt="" className="h-[50px] w-[50px]" />
             <div>
               <p className="text-sm md:text-base xl:text-[13px] font-semibold">
                 TBD
@@ -79,7 +103,7 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="flex items-center  gap-3">
-            <img src="/heroteamicon.svg" alt="" className="h-[60px] w-[60px]" />
+            <img src="/heroteamicon.svg" alt="" className="h-[50px] w-[50px]" />
             <div>
               <p className="text-sm md:text-base xl:text-[13px] font-semibold">
                 10 TEAMS
@@ -90,7 +114,11 @@ const HeroSection = () => {
       </div>
       {/* Scroll indicator */}
       <div className=" z-50 relative bottom-0 lg:-top-[2rem]  flex flex-col justify-center items-center gap-3 ">
-        <img src="/scrollIcon.svg" alt="" className="h-18 w-10 " />
+        <div className="flex flex-col justify-center items-center">
+          <img src="/mouse.svg" alt="" className="h-18 w-10 " />
+          <img src="/downarrow.png" alt="" className="h-5 w-15 " />
+          <img src="/downarrow.png" alt="" className="h-5 w-15 " />
+        </div>
         <p className="text-xs md:text-sm text-white/60">
           Scroll Down To Know More…
         </p>
