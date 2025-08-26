@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="w-full px-[6rem] mt-[6rem] mb-[6rem]">
+    <div className="w-full px-[6rem]  mb-[6rem]">
       <h2 className="text-3xl font-bold uppercase  flex flex-col  ">
         <span className="font-[Ethnocentric]">Contact Us</span>
         <span className="h-[4px] w-[6rem] bg-[#C40100] inline-block "></span>
@@ -13,48 +13,48 @@ const Contact = () => {
           <div className="flex flex-col space-y-8">
             {/* Full Name */}
             <div className="flex items-center rounded-md px-4 py-3 border">
-              <img src="/user.svg" alt="User" className="w-5 h-5 mr-3" />
+              <img src="/fullnameIcon.svg" alt="User" className=" h-10 mr-3" />
               <input
                 type="text"
                 placeholder="Full Name"
-                className="bg-transparent outline-none w-full h-[3rem] text-sm placeholder-gray-400"
+                className="bg-transparent outline-none w-full h-[3rem] text-sm lg:text-[20px] placeholder-gray-400"
               />
             </div>
 
             {/* Organization */}
             <div className="flex items-center  rounded-md px-4 py-3 border">
-              <img src="/company.svg" alt="Company" className="w-5 h-5 mr-3" />
+              <img src="/orgIcon.svg" alt="Company" className=" h-10 mr-3" />
               <input
                 type="text"
                 placeholder="Organization/Company"
-                className="bg-transparent outline-none w-full h-[3rem] text-sm placeholder-gray-400"
+                className="bg-transparent outline-none w-full h-[3rem] text-sm lg:text-[20px] placeholder-gray-400"
               />
             </div>
 
             {/* Email */}
             <div className="flex items-center border rounded-md px-4 py-3">
-              <img src="/email.svg" alt="Email" className="w-5 h-5 mr-3" />
+              <img src="/emailIcon.svg" alt="Email" className=" h-10 mr-3" />
               <input
                 type="email"
                 placeholder="Email Address"
-                className="bg-transparent outline-none w-full  h-[3rem] text-sm placeholder-gray-400"
+                className="bg-transparent outline-none w-full  h-[3rem] text-sm lg:text-[20px] placeholder-gray-400"
               />
             </div>
 
             {/* Phone */}
             <div className="flex items-center border rounded-md px-4 py-3">
-              <img src="/phone.svg" alt="Phone" className="w-5 h-5 mr-3" />
+              <img src="/phoneIcon.svg" alt="Phone" className=" h-10 mr-3" />
               <input
                 type="tel"
                 placeholder="Phone Number"
-                className="bg-transparent outline-none w-full  h-[3rem] text-sm placeholder-gray-400"
+                className="bg-transparent outline-none w-full  h-[3rem] text-sm lg:text-[20px] placeholder-gray-400"
               />
             </div>
 
             {/* Inquiry Type */}
             <div className="flex items-center border rounded-md px-4 py-3">
-              <img src="/inquiry.svg" alt="Inquiry" className="w-5 h-5 mr-3" />
-              <select className="bg-transparent outline-none w-full  h-[3rem] text-sm text-gray-400">
+              
+              <select className="bg-transparent outline-none w-full  h-[3rem] text-sm lg:text-[20px] text-gray-400">
                 <option value="">Type of Inquiry</option>
                 <option value="support">Support</option>
                 <option value="sales">Sales</option>
@@ -68,9 +68,9 @@ const Contact = () => {
             <textarea
               rows="10"
               placeholder="Message"
-              className="bg-transparent border h-[79%] rounded-md px-4 py-3 outline-none text-sm"
+              className="bg-transparent border h-[79%] rounded-md px-4 py-3 outline-none text-sm lg:text-[20px]"
             ></textarea>
-            <button className="mt-8 bg-red-600 hover:bg-red-700 px-6 py-3 rounded-md text-sm font-medium transition">
+            <button className="mt-8 bg-red-600 hover:bg-red-700 px-6 py-3 rounded-md text-sm lg:text-[20px] font-medium transition">
               Send Message
             </button>
             <span className="text-xs text-gray-400 mt-2">
@@ -79,7 +79,7 @@ const Contact = () => {
           </div>
 
           {/* Right Contact Info */}
-          <div className="border rounded-md px-6 py-6 h-[79%]">
+          <div className="border rounded-md px-6 py-6 h-[79%] space-y-5">
             <h3 className="text-lg font-semibold mb-4 lg:text-[22px]">
               Contact Information
             </h3>
@@ -103,9 +103,9 @@ const Contact = () => {
             <p className="text-sm mb-2 font-medium">Follow us on</p>
             <div className="flex space-x-3 mt-2">
               <img src="/facebook.svg" alt="Facebook" className="w-6 h-6" />
-              <img src="/instagram.svg" alt="Instagram" className="w-6 h-6" />
-              <img src="/youtube.svg" alt="YouTube" className="w-6 h-6" />
-              <img src="/twitter.svg" alt="Twitter" className="w-6 h-6" />
+              <img src="/Instagram.svg" alt="Instagram" className="w-6 h-6" />
+              <img src="/Youtube.svg" alt="YouTube" className="w-6 h-6" />
+              <img src="/X.svg" alt="Twitter" className="w-6 h-6" />
             </div>
           </div>
         </div>

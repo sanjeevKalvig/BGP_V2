@@ -14,7 +14,7 @@ const HeroSection = () => {
 
       {/* Left vertical label + dots */}
       <span
-        className="rotate-180 fixed top-[35%] flex flex-col-1 gap-4 justify-center items-center  
+        className="rotate-180 z-10  fixed top-[35%] flex flex-col-1 gap-4 justify-center items-center  
         [writing-mode:vertical-rl] tracking-[0.3em] text-xs text-white/60 font-ethnocentric"
         aria-hidden="true"
       >
@@ -25,7 +25,7 @@ const HeroSection = () => {
         </div>
         <p className="opacity-50 lg:text-[12px]"> BHARATVA GRAND PRIX</p>
       </span>
-      <div className="flex flex-col gap-4 justify-center items-center fixed top-[40%] right-[4rem]">
+      <div className="flex flex-col z-10 gap-4 justify-center items-center fixed top-[40%] right-[4rem]">
         <button
           className="h-3 w-3 rounded-full bg-white/20 border border-white/30"
           aria-label="Section 1"
@@ -74,14 +74,14 @@ const HeroSection = () => {
         </div>
 
         {/* Center: Car image */}
-        <div className="relative flex justify-center z-10 top-[10rem]">
+        <div className="relative flex justify-center z-50 top-[10rem]">
           <img
             src="/heroimg.png"
             alt="Performance car silhouette"
             className="w-[600px] h-[500px] object-contain opacity-90"
             draggable="false"
           />
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black to-transparent" />
+          <div className="pointer-events-none absolute z-60 inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black to-transparent" />
         </div>
 
         {/* Right: Info cards */}

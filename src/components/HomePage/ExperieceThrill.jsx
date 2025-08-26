@@ -11,7 +11,70 @@ import {
 const ExperieceThrill = () => {
   return (
     <>
-      <section></section>
+      <section
+        id="speed"
+        className="relative mt-[20rem] text-white min-h-screen flex items-center justify-center  border"
+      >
+        {/* Overlay for dark + red effect */}
+        <img
+          src="/thrillcar.png"
+          alt="thrillcar"
+          className=" absolute w-full object-cover  "
+        />
+        <h1 className="absolute -top-[8rem] font-ethnocentric italic lg:text-[100px] ">
+          EXPERIENCE THE <br /> THRILL OF SPEED
+        </h1>
+
+        <div className="relative lg:-bottom-[18rem] z-10  w-[70%] text-center px-6">
+          {/* Info Section */}
+          <div className="flex gap-20 items-center justify-center">
+            {/* Teams */}
+            <div className="flex  items-center">
+              <div>
+                <img
+                  src="teamsIcon.svg"
+                  alt="Teams Icon"
+                  className=" h-[70px] mb-3"
+                />
+              </div>
+              <div className="flex flex-col lg:text-[25px] text-left">
+                <h3 className="text-xl font-bold">45+</h3>
+                <p className="text-gray-300">Teams</p>
+              </div>
+            </div>
+
+            {/* Race Days */}
+            <div className="flex  items-center justify-center">
+              <div>
+                <img
+                  src="flgIcon.svg"
+                  alt="Teams Icon"
+                  className="h-[70px] mb-3"
+                />
+              </div>
+              <div className="flex flex-col lg:text-[25px] text-left">
+                <h3 className=" font-bold">3 Race</h3>
+                <p className="text-gray-300">Day</p>
+              </div>
+            </div>
+
+            {/* Spectator Entry */}
+            <div className="flex  items-center justify-center">
+              <div>
+                <img
+                  src="personIcon.svg"
+                  alt="Teams Icon"
+                  className="h-[70px] mb-3"
+                />
+              </div>
+              <div className="flex flex-col lg:text-[25px] text-left">
+                <h3 className=" font-bold">3 Spectator</h3>
+                <p className="text-gray-300">Entry</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* track section */}
       <section className="px-[4rem] mt-[6rem] mb-[6rem]">
         {/* Header section with background text */}
@@ -117,9 +180,9 @@ const ExperieceThrill = () => {
         </div>
         <p className="w-full bg-black text-white px-16 lg:text-[23px]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          dolore, delectus repellat tempore sam doloremque itaque sequi fuga sint
-          repellendus ea quae, exercitationem repudiandae veritatis, officia
-          odit .
+          dolore, delectus repellat tempore sam doloremque itaque sequi fuga
+          sint repellendus ea quae, exercitationem repudiandae veritatis,
+          officia odit .
         </p>
       </section>
     </>

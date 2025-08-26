@@ -13,17 +13,18 @@ import Footer from "../components/HomePage/Footer";
 const HomePage = () => {
   return (
     <>
-       <Header />
+      <Header />
       <HeroSection />
       <ExperieceThrill />
       <Teams />
       <Driver />
       {/* <Tickets />
         <SponsorsSection />
-        <News />
-        <FAQ />*/}
-      <Contact />
-      {/*   <Footer />  */}
+        <News />*/}
+        <Contact />
+        <FAQ />
+      
+      <Footer />
     </>
   );
 };
