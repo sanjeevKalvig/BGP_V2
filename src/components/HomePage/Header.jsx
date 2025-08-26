@@ -33,7 +33,7 @@ const Header = () => {
 
       <div className='flex gap-10 pr-5'>
         {/* contactus button */}
-        <button className='border-4 border-[rgba(196,1,0,0.3)] bg-[#6F0000] px-4 py-2 -skew-x-6 rounded-[10px]'>CONTACT US</button>
+        <button className='border-4 border-[rgba(196,1,0,0.3)] bg-[#6F0000]  px-4 py-2 -skew-x-6 rounded-[10px]'>CONTACT US</button>
         {/* hamburger menu */}
         <div className='flex flex-col'>
           <span className='text-[12px]'>MENU</span>

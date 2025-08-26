@@ -92,7 +92,8 @@ const Footer = () => {
             />
             <button
               className="bg-white sm:text-[12px] md:text-[13px] lg:text-[15px] xl:text-[20px] font-light text-black  
-          px-4 py-2 rounded sm:w-[90px] md:w-[100px]  lg:w-[130px] sm:h-[30px] md:h-[33px]  lg:h-[35px] xl:w-[170px] xl:h-[40px] flex justify-center items-center"
+          px-4 py-2 rounded sm:w-[90px] md:w-[100px] 
+           lg:w-[130px] sm:h-[30px] md:h-[33px]  lg:h-[35px] xl:w-[170px] xl:h-[40px] flex justify-center items-center"
             >
               Login/Register
             </button>
