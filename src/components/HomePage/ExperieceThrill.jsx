@@ -98,7 +98,7 @@ const ExperieceThrill = () => {
           <span className="h-1  w-[15%] bg-[#C40100] inline-block"></span>
         </div>
         {/* Track image and info */}
-        <div className="w-full bg-black text-white px-8 py-12">
+        <div className="w-full  text-white px-8 py-12">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             {/* LEFT SIDE - Info */}
             <div className="space-y-6">
@@ -110,7 +110,7 @@ const ExperieceThrill = () => {
                 <img
                   src="/date.svg"
                   alt="dateicon"
-                  className="w-[50px] h-[50px]"
+                  className="w-[30px] h-[30px]"
                 />
                 <div>
                   <p className="lg:text-[22px] font-bold">UPCOMING EVENT</p>
@@ -122,7 +122,7 @@ const ExperieceThrill = () => {
                 <img
                   src="speed.svg"
                   alt="speedicon"
-                  className="w-[50px] h-[50px]"
+                  className="w-[30px] h-[30px]"
                 />
                 <div>
                   <p className="lg:text-[22px] font-bold">TOP SPEED</p>
@@ -134,7 +134,7 @@ const ExperieceThrill = () => {
                 <img
                   src="turn.svg"
                   alt="turnicon"
-                  className="w-[50px] h-[50px]"
+                  className="w-[30px] h-[30px]"
                 />
                 <div>
                   <p className="lg:text-[22px] font-bold">TURNS</p>
@@ -146,7 +146,7 @@ const ExperieceThrill = () => {
                 <img
                   src="avglap.svg"
                   alt="timericon"
-                  className="w-[50px] h-[50px]"
+                  className="w-[30px] h-[30px]"
                 />
                 <div>
                   <p className="lg:text-[22px] font-bold">AVERAGE LAP</p>
@@ -160,7 +160,7 @@ const ExperieceThrill = () => {
             {/* RIGHT SIDE - Track Image */}
             <div className="relative flex items-center justify-center">
               {/* Icons Top Right */}
-              <div className="absolute top-0 right-4 flex gap-3">
+              <div className="absolute top-11 right-4 flex gap-3">
                 <button className="p-2 rounded-full bg-neutral-800 hover:bg-neutral-700 transition">
                   <ChevronLeft className="w-5 h-5 lg:w-8 lg:h-8 text-white" />
                 </button>
@@ -171,9 +171,9 @@ const ExperieceThrill = () => {
 
               {/* Track Image */}
               <img
-                src="/trackimage.png"
+                src="/track.svg"
                 alt="Buddh International Circuit"
-                className=" object-contain lg:w-[50rem] "
+                className=" "
               />
             </div>
           </div>

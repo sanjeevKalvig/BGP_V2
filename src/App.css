@@ -22,6 +22,7 @@ html ,body #root{
   background-color: black;
   color: white;
   font-family: 'montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 

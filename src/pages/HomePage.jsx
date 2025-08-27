@@ -16,14 +16,19 @@ const HomePage = () => {
       <Header />
       <HeroSection />
       <ExperieceThrill />
-      <Teams />
+      <div className=" max-w-[1920px] m-auto  ">
+        <Teams />
+      </div>
       <Driver />
-      {/* <Tickets />
+      <div className=" sm:px-[6rem] max-w-[1920px] m-auto  ">
+        <Tickets />
+      </div>
+      {/* 
         <SponsorsSection />
         <News />*/}
-        <Contact />
-        <FAQ />
-      
+      <Contact />
+      <FAQ />
+
       <Footer />
     </>
   );
