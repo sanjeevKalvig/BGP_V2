@@ -23,9 +23,9 @@ const HomePage = () => {
       <div className=" sm:px-[6rem] max-w-[1920px] m-auto  ">
         <Tickets />
       </div>
-      {/* 
+      
         <SponsorsSection />
-        <News />*/}
+       {/*  <News /> */}
       <Contact />
       <FAQ />
 
