@@ -66,46 +66,50 @@ const SponsorsSection = () => {
   ];
 
   return (
-    <div className="px-4 sm:px-6 md:px-8 lg:px-[6rem]">
-      <h2 className="text-2xl sm:text-3xl font-bold uppercase flex flex-col">
-        <span className="font-[Ethnocentric]">SPONSORS</span>
-        <span className="h-[4px] w-[6rem] bg-[#C40100] inline-block"></span>
-      </h2>
-      <div className="flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 lg:p-[6rem]">
-        {/* Logos Grid Section */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-5 mb-6 sm:mb-8 md:mb-10 w-full">
-          {sponsors.map((sponsor) => (
-            <div
-              key={sponsor.id}
-              className="flex items-center justify-center border h-[80px] sm:h-[90px] lg:h-[100px] w-full md:w-[180px] lg:w-[200px]"
-            >
-              <a
-                href={sponsor.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block transition-transform duration-200 hover:scale-105"
+    <>
+      <div className=" w-full px-[6rem] ">
+        <h2 className="text-2xl sm:text-3xl font-bold uppercase flex flex-col left-[4rem]">
+          <span className="font-[Ethnocentric]">SPONSORS</span>
+          <span className="h-[4px] w-[6rem] bg-[#C40100] inline-block"></span>
+        </h2>
+      </div>
+      <div className="px-4 sm:px-6 md:px-8 lg:px-[6rem] flex flex-col justify-center items-center">
+        <div className="flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 lg:p-[6rem] max-w-[1560px] ">
+          {/* Logos Grid Section */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5   gap-3 sm:gap-4 md:gap-5  mb-6 sm:mb-8 md:mb-10 w-full ">
+            {sponsors.map((sponsor) => (
+              <div
+                key={sponsor.id}
+                className="flex items-center justify-center border h-[80px] sm:h-[90px] lg:h-[100px] w-full md:w-[180px] lg:w-[200px]"
               >
-                <img
-                  src={sponsor.logo}
-                  alt={sponsor.name}
-                  className="w-24 sm:w-28 md:w-32 lg:w-36 h-16 sm:h-18 md:h-20 object-contain p-2 box-border"
-                />
-              </a>
-            </div>
-          ))}
-        </div>
+                <a
+                  href={sponsor.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block transition-transform duration-200 hover:scale-105"
+                >
+                  <img
+                    src={sponsor.logo}
+                    alt={sponsor.name}
+                    className="w-24 sm:w-28 md:w-32 lg:w-36 h-16 sm:h-18 md:h-20 object-contain p-2 box-border"
+                  />
+                </a>
+              </div>
+            ))}
+          </div>
 
-        {/* Become a Sponsor Section */}
-        <div className="text-center">
-          <a
-            href="#sponsor"
-            className="text-red-500 hover:text-red-400 hover:underline text-sm sm:text-base font-medium transition-colors duration-200"
-          >
-            Become a Sponsor →
-          </a>
+          {/* Become a Sponsor Section */}
+          <div className="text-center">
+            <a
+              href="#sponsor"
+              className="text-red-500 hover:text-red-400 hover:underline text-sm sm:text-base font-medium transition-colors duration-200"
+            >
+              Become a Sponsor →
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
