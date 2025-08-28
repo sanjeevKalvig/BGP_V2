@@ -13,7 +13,7 @@ const ExperieceThrill = () => {
     <>
       <section
         id="speed"
-        className="relative mt-[20rem] text-white min-h-screen flex items-center justify-center "
+        className="relative mt-[13rem] text-white h-[min(100vh,900px)] flex items-center justify-center "
       >
         {/* Overlay for dark + red effect */}
         <img
