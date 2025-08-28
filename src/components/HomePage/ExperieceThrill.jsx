@@ -19,66 +19,66 @@ const ExperieceThrill = () => {
         <img
           src="/thrillcar.png"
           alt="thrillcar"
-          className=" absolute w-full object-cover  "
+          className=" absolute w-full object-cover z-0  "
         />
-        <h1 className="absolute -top-[8rem] font-ethnocentric italic lg:text-[100px] ">
+        <h1 className="absolute -top-[8rem] font-ethnocentric italic lg:text-[clamp(3rem,6.5vw,160px)] ">
           EXPERIENCE THE <br /> THRILL OF SPEED
         </h1>
 
-        <div className="relative lg:-bottom-[18rem] z-10  w-[70%] text-center px-6">
+        <div className="relative lg:-bottom-[18rem] z-10 text-center px-6">
           {/* Info Section */}
-          <div className="flex gap-20 items-center justify-center">
+          <div className="flex items-center justify-center">
             {/* Teams */}
-            <div className="flex  items-center">
+            <div className="flex gap-2 items-center border-r pr-6">
               <div>
                 <img
                   src="teamsIcon.svg"
                   alt="Teams Icon"
-                  className=" h-[70px] mb-3"
+                  className=" h-[70px] "
                 />
               </div>
               <div className="flex flex-col lg:text-[25px] text-left">
-                <h3 className="text-xl font-bold">45+</h3>
-                <p className="text-gray-300">Teams</p>
+                <h3 className=" font-bold">45+</h3>
+                <p className="text-gray-300 border-b-2 border-red-600">Teams</p>
               </div>
             </div>
 
             {/* Race Days */}
-            <div className="flex  items-center justify-center">
+            <div className="flex gap-4  items-center justify-center border-r px-6">
               <div>
                 <img
                   src="flgIcon.svg"
                   alt="Teams Icon"
-                  className="h-[70px] mb-3"
+                  className="h-[70px] "
                 />
               </div>
               <div className="flex flex-col lg:text-[25px] text-left">
                 <h3 className=" font-bold">3 Race</h3>
-                <p className="text-gray-300">Day</p>
+                <p className="text-gray-300 border-b-2 border-red-600 w-[max-content] pr-3">Days</p>
               </div>
             </div>
 
             {/* Spectator Entry */}
-            <div className="flex  items-center justify-center">
+            <div className="flex gap-4  items-center justify-center pl-6">
               <div>
                 <img
                   src="personIcon.svg"
                   alt="Teams Icon"
-                  className="h-[70px] mb-3"
+                  className="h-[70px]"
                 />
               </div>
               <div className="flex flex-col lg:text-[25px] text-left">
                 <h3 className=" font-bold">3 Spectator</h3>
-                <p className="text-gray-300">Entry</p>
+                <p className="text-gray-300 border-b-2 border-red-600 w-[max-content] pr-3">Entry</p>
               </div>
             </div>
           </div>
         </div>
       </section>
       {/* track section */}
-      <section className="px-[4rem] mt-[6rem] mb-[6rem] ">
+      <section className="relative z-10 px-[4rem] mt-[6rem] mb-[6rem]">
         {/* Header section with background text */}
-        <div className="relative flex items-center justify-between mb-[3rem]  font-[Ethnocentric]">
+        <div className="relative flex items-center justify-between font-[Ethnocentric]">
           {/* Big background text */}
           <span
             className="absolute  left-0 top-1/2 -translate-y-1/2 text-[70px]
@@ -94,15 +94,14 @@ const ExperieceThrill = () => {
             </span>
             <span className="h-[2px] w-[20.5rem] bg-[#C40100] inline-block"></span>
           </div>
-          {/* Red line */}
-          <span className="h-1  w-[15%] bg-[#C40100] inline-block"></span>
+
         </div>
         {/* Track image and info */}
-        <div className="w-full  text-white px-8 py-12">
-          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="w-full  text-white pl-14 mt-14 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 ">
             {/* LEFT SIDE - Info */}
-            <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl lg:text-[40px] font-extrabold">
+            <div className="flex flex-col gap-6 ">
+              <h2 className=" md:text-xl lg:text-[clamp(24px,2.5vw,36px)] font-extrabold">
                 Buddh International Circuit
               </h2>
 
@@ -158,9 +157,9 @@ const ExperieceThrill = () => {
             </div>
 
             {/* RIGHT SIDE - Track Image */}
-            <div className="relative flex items-center justify-center">
+            <div className=" relative flex  justify-center ">
               {/* Icons Top Right */}
-              <div className="absolute top-11 right-4 flex gap-3">
+              <div className="absolute top-0 right-20 flex gap-3">
                 <button className="p-2 rounded-full bg-neutral-800 hover:bg-neutral-700 transition">
                   <ChevronLeft className="w-5 h-5 lg:w-8 lg:h-8 text-white" />
                 </button>
@@ -171,14 +170,15 @@ const ExperieceThrill = () => {
 
               {/* Track Image */}
               <img
-                src="/track.svg"
+                src="/track.png"
                 alt="Buddh International Circuit"
-                className=" "
+                className="h-[450px] w-full"
+                style={{ transformOrigin: "bottom", scale: "1 1.2" }}
               />
             </div>
           </div>
         </div>
-        <p className="w-full bg-black text-white px-16 lg:text-[23px]">
+        <p className="w-full bg-black text-white px-14  lg:text-[18px] xl:text-[23px]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
           dolore, delectus repellat tempore sam doloremque itaque sequi fuga
           sint repellendus ea quae, exercitationem repudiandae veritatis,
