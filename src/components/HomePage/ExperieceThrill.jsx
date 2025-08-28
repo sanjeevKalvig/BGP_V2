@@ -76,7 +76,7 @@ const ExperieceThrill = () => {
         </div>
       </section>
       {/* track section */}
-      <section className="px-[4rem] mt-[6rem] mb-[6rem]">
+      <section className="px-[4rem] mt-[6rem] mb-[6rem] ">
         {/* Header section with background text */}
         <div className="relative flex items-center justify-between mb-[3rem]  font-[Ethnocentric]">
           {/* Big background text */}

@@ -74,14 +74,15 @@ const HeroSection = () => {
         </div>
 
         {/* Center: Car image */}
-        <div className="relative flex justify-center z-50 top-[10rem]">
+        <div className="relative flex justify-center z-50 lg:top-[6rem] xl:top-[10rem]">
           <img
             src="/heroimg.png"
             alt="Performance car silhouette"
-            className="w-[600px] h-[500px] object-contain opacity-90"
+            className=" lg:w-[60%] xl:w-[600px] xl:h-[500px] object-contain opacity-90"
             draggable="false"
           />
-          <div className="pointer-events-none absolute z-60 inset-x-0 bottom-0 h-40 bg-gradient-to-t from-black to-transparent" />
+          <div className="pointer-events-none absolute z-60 
+          inset-x-0 bottom-0 h-40 lg:h-[1rem] bg-gradient-to-t from-black to-transparent" />
         </div>
 
         {/* Right: Info cards */}

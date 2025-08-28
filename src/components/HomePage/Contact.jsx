@@ -70,7 +70,7 @@ const Contact = () => {
               placeholder="Message"
               className="bg-transparent border h-[79%] rounded-md px-4 py-3 outline-none text-sm lg:text-[20px]"
             ></textarea>
-            <button className="mt-8 bg-red-600 hover:bg-red-700 px-6 py-3 rounded-md text-sm lg:text-[20px] font-medium transition">
+            <button className="mt-8 bg-gradient-to-t from-[#B70000] to-[#510000]  hover:bg-red-700 px-6 py-3 rounded-md text-sm lg:text-[20px] font-medium transition">
               Send Message
             </button>
             <span className="text-xs text-gray-400 mt-2">

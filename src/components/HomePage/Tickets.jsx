@@ -66,7 +66,7 @@ const Tickets = () => {
 
       <div className="mt-12 flex flex-col justify-center items-center gap-4">
         <div className="w-[70%] flex  justify-center items-center  gap-7">
-          <button className="bg-red-700 hover:bg-red-800 text-white px-6 py-3 text-[12px] rounded-[15px] 2xl:text-[20px] lg:text-lg xl:w-[16rem] font-bold">
+          <button className="bg-gradient-to-t from-[#B70000] to-[#510000]  hover:bg-red-800 text-white px-6 py-3 text-[12px] rounded-[15px] 2xl:text-[20px] lg:text-lg xl:w-[16rem] font-bold">
             Buy Tickets Now
           </button>
           <button className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-3 text-[12px]  lg:text-lg rounded-[15px] 2xl:text-[20px] xl:w-[16rem] font-bold">
