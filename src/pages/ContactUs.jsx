@@ -15,7 +15,7 @@ const ContactUs = () => {
           className="absolute top-0 lg:-top-10 z-10 overflow-hidden w-full h-auto object-cover opacity-50"
         />
         <div className="flex z-50 py-10 sm:py-16 lg:py-20 relative justify-center items-center overflow-hidden px-4 sm:px-6 lg:px-0">
-          <div className="w-full sm:w-[85%] lg:w-[70%] bg-[#282727] rounded-2xl sm:rounded-[3rem] p-4 sm:p-6 lg:p-[4rem] h-auto lg:h-[600px]">
+          <div className="w-full sm:w-[85%] lg:w-[70%] bg-[#121212f2] rounded-2xl sm:rounded-[3rem] p-4 sm:p-6 lg:p-[4rem] h-auto lg:h-[650px]">
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold uppercase flex flex-col">
               <span className="font-[Ethnocentric]">Contact Us</span>
               <span className="h-[3px] sm:h-[4px] w-[4rem] sm:w-[5rem] lg:w-[6rem] bg-[#C40100] inline-block mt-2"></span>
@@ -23,12 +23,12 @@ const ContactUs = () => {
             <div className="text-white flex flex-col items-center justify-center mt-4 sm:mt-6">
               <div className="w-full flex flex-col sm:flex-row gap-3 sm:gap-4 lg:gap-6 mt-4 sm:mt-6">
                 {/* Left Form Section */}
-                <div className="bg-[#343333] flex flex-col w-full sm:w-[65%] border rounded-[10px] sm:rounded-[15px] gap-3 sm:gap-5 p-4 sm:p-5 lg:p-7">
+                <div className="bg-[#0B0B0BF2] flex flex-col w-full sm:w-[65%] border rounded-[10px] sm:rounded-[15px] gap-3 sm:gap-5 p-4 sm:p-5 lg:p-7">
                   <div className="flex flex-col sm:flex-row sm:items-start sm:gap-4 lg:gap-5 w-full">
                     {/* Left Form Fields */}
                     <div className="flex flex-col space-y-3 sm:space-y-4 lg:space-y-6 w-full sm:w-[60%]">
                       {/* Full Name */}
-                      <div className="bg-[#343232] flex items-center rounded-md px-3 sm:px-4 py-2 sm:py-3 border">
+                      <div className="bg-[#191919] flex items-center rounded-md px-3 sm:px-4 py-2 sm:py-3 border">
                         <img
                           src="/fullnameIcon.svg"
                           alt="User"
@@ -42,7 +42,7 @@ const ContactUs = () => {
                       </div>
 
                       {/* Organization */}
-                      <div className="bg-[#343232] flex items-center rounded-md px-3 sm:px-4 py-2 sm:py-3 border">
+                      <div className="bg-[#191919] flex items-center rounded-md px-3 sm:px-4 py-2 sm:py-3 border">
                         <img
                           src="/orgIcon.svg"
                           alt="Company"
@@ -56,7 +56,7 @@ const ContactUs = () => {
                       </div>
 
                       {/* Email */}
-                      <div className="bg-[#343232] flex items-center border rounded-md px-3 sm:px-4 py-2 sm:py-3">
+                      <div className="bg-[#191919] flex items-center border rounded-md px-3 sm:px-4 py-2 sm:py-3">
                         <img
                           src="/emailIcon.svg"
                           alt="Email"
@@ -70,7 +70,7 @@ const ContactUs = () => {
                       </div>
 
                       {/* Phone */}
-                      <div className="bg-[#343232] flex items-center border rounded-md px-3 sm:px-4 py-2 sm:py-3">
+                      <div className="bg-[#191919] flex items-center border rounded-md px-3 sm:px-4 py-2 sm:py-3">
                         <img
                           src="/phoneIcon.svg"
                           alt="Phone"
@@ -82,7 +82,7 @@ const ContactUs = () => {
                           className="bg-transparent outline-none w-full h-[1.2rem] sm:h-[1.5rem] text-xs sm:text-sm lg:text-[20px] placeholder-gray-400"
                         />
                       </div>
-                      <button className="mt-4 sm:mt-6 lg:mt-8 bg-red-600 hover:bg-red-700 px-4 sm:px-6 py-2 sm:py-3 rounded-md text-xs sm:text-sm lg:text-[20px] font-medium transition">
+                      <button className="mt-4 sm:mt-6 lg:mt-8 bg-gradient-to-b from-[#3F0000] to-[#CA0000] hover:bg-red-700 px-4 sm:px-6 py-2 sm:py-3 rounded-md text-xs sm:text-sm lg:text-[20px] font-medium transition">
                         Send Message
                       </button>
                     </div>
@@ -92,7 +92,7 @@ const ContactUs = () => {
                       <textarea
                         rows="5"
                         placeholder="Message"
-                        className="bg-[#343232] border h-[100px] sm:h-full rounded-md px-3 sm:px-4 py-2 sm:py-3 outline-none 
+                        className="bg-[#191919] border h-[100px] sm:h-full rounded-md px-3 sm:px-4 py-2 sm:py-3 outline-none 
                         text-xs sm:text-sm lg:text-[20px]"
                       ></textarea>
 
@@ -104,8 +104,8 @@ const ContactUs = () => {
                 </div>
 
                 {/* Right Contact Info */}
-                <div className="bg-[#343333] border w-full sm:w-[35%]  rounded-[6px] p-3 sm:p-4 lg:p-6 items-center">
-                  <div className="bg-[#343232] h-full flex flex-col rounded-[6px] border p-3 sm:p-4 lg:p-5 space-y-3 sm:space-y-5">
+                <div className="bg-[#0B0B0BF2] border w-full sm:w-[35%]  rounded-[6px] p-3 sm:p-4 lg:p-6 items-center">
+                  <div className="bg-[#191919] h-full flex flex-col rounded-[6px] border p-3 sm:p-4 lg:p-5 space-y-3 sm:space-y-5">
                     <h3 className="text-base sm:text-md lg:text-lg xl:text-[22px] font-semibold mb-2 sm:mb-4">
                       Contact Information
                     </h3>

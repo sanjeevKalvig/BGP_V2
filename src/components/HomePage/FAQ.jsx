@@ -50,7 +50,7 @@ const FAQ = () => {
         <span className="h-[4px] w-[3rem] bg-[#C40100] inline-block "></span>
       </h2>
       <div className="sm:px-[5rem] max-w-[1920px] m-auto flex flex-col gap-8 items-center w-full ">
-        <div className="flex flex-col gap-3 sm:gap-5 w-full">
+        <div className="flex flex-col gap-3 sm:gap-5 w-full max-w-[1560px]">
           {items.map((item, index) => (
             <div
               key={index}
