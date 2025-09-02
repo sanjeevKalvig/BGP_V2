@@ -7,9 +7,7 @@ import TeamsPage from './pages/TeamsPage';
 import DriverPage from './pages/DriverPage';
 import TeamsDetails from './components/Teams/TeamsDetails';
 import NewsPage from './pages/NewsPage';
-
-
-
+import DriverDetail from './components/DriverDetail.jsx/DriverDetail';
 
 export default function App() {
   return (
@@ -21,8 +19,10 @@ export default function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path='/teams' element={<TeamsPage/>} />
         <Route path='/driver' element={<DriverPage/>} />
+        <Route path='/driverdetail' element={<DriverDetail/>} />
         <Route path='/teamdetail' element={<TeamsDetails/>} />
         <Route path='/news' element={<NewsPage/>} />
+       
       </Routes>
     </Router>
   );
