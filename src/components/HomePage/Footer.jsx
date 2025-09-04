@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -51,33 +51,35 @@ const Footer = () => {
         {/* Navigation Links */}
         <div className="w-[50%] sm:w-[25%] grid grid-cols-2  text-sm text-left sm:text-center md:text-left font-montserrat  ">
           <div className="space-y-2 flex flex-col sm:text-[10px] md:text-[11px] lg:text-[15px] xl:text-[18px] leading-5 lg:leading-7 font-sans font-semibold">
-            <a href="#" className="hover:underline">
+            <Link to="/" className="hover:underline">
               Home
-            </a>
-            <a href="#" className="hover:underline">
+            </Link>
+            <Link to='/events' className="hover:underline">
               Event Info
-            </a>
-            <a href="#teams" className="hover:underline">
+            </Link>
+             <Link to='/teams' className="hover:underline">
               Teams
-            </a>
-            <a href="#tickets" className="hover:underline">
+            </Link>
+            <Link to='/tickets' className="hover:underline">
               Tickets
-            </a>
+            </Link>
           </div>
           <div className="space-y-2 flex flex-col sm:text-[10px] md:text-[11px] lg:text-[15px] xl:text-[18px] leading-5 lg:leading-7 font-sans font-semibold">
             <a href="#" className="hover:underline">
               Gallery
             </a>
-            <a href="#news" className="hover:underline">
+            <Link to='/news' className="hover:underline">
               News
-            </a>
-            <a href="#sponsors" className="hover:underline">
+            </Link>
+            <Link to='/sponsors' className="hover:underline">
               Sponsors
-            </a>
+            </Link>
             {/* <a href="#contactus" className="hover:underline">
               Contact Us
             </a> */}
-             <Link to="/contact"  className="hover:underline ">Contact Us</Link>
+            <Link to="/contact" className="hover:underline ">
+              Contact Us
+            </Link>
           </div>
         </div>
 

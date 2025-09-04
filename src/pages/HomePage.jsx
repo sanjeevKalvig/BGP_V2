@@ -9,6 +9,7 @@ import Teams from "../components/HomePage/Teams";
 import Tickets from "../components/HomePage/Tickets";
 import FAQ from "../components/HomePage/FAQ";
 import Footer from "../components/HomePage/Footer";
+import AutoPlaySound from "../components/AutoPlaySound";
 
 const HomePage = () => {
   return (
@@ -23,9 +24,9 @@ const HomePage = () => {
       <div className=" sm:px-[6rem] max-w-[1920px] m-auto  ">
         <Tickets />
       </div>
-      
-        <SponsorsSection />
-       {/*  <News /> */}
+
+      <SponsorsSection />
+      {/*  <News /> */}
       <Contact />
       <FAQ />
 
