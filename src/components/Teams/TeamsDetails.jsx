@@ -7,42 +7,70 @@ const TeamsDetails = () => {
     <div>
       <Header />
       <div className="relative w-full px-[4rem]">
-        <div className="flex flex-col items-center justify-center min-h-screen">
+        <div className="flex flex-col items-center justify-center min-h-screen py-[4rem]">
           {/* Top: Team Logo and Name */}
-          <div className=" w-full flex flex-col items-center mb-8">
+          <div className=" w-full flex flex-col items-center mt-20 mb-8">
             <img
               src="/teamlogo.svg"
               alt="Delhi Eternals Logo"
-              className="w-[55%] h-full"
+              className="w-[50%] h-full"
             />
           </div>
 
           {/* Bottom: Player Card Container */}
-          <div className=" relative flex flex-row gap-6 ">
+          <div className=" relative flex flex-row gap-20 mt-[5rem]">
             {/* Player Card 1 */}
-            <div className=" relative bg-gradient-to-b from-[#000000] to-[#470000] w-[200px]">
-             <img src="/driver.png" alt="" className="z-10 h-[15rem] w-[20rem] -top-[3rem] absolute"/>
-             <h2>KARAN SINGH</h2>
-             <div className="absolute h-[20%] bg-[#202020] z-[60]">
-             </div>
-            </div>
-            {/* Player Card 2 */}
-            <div className="bg-[#111] rounded-xl overflow-hidden shadow-lg w-52 flex flex-col items-center">
-              <div className="w-full h-44 bg-[#262626] flex items-center justify-center">
+            <div className=" r h-[18rem] shadow-lg  w-72 relative flex flex-col items-center">
+              <div className="relative h-[80%] w-full bg-gradient-to-b from-[#000000] to-[#470000] "> 
+                {/* Image Section */}
                 <img
-                  src="/driver.jpg"
+                  src="driver/driverimg.png" // replace with your driver image
                   alt="Karan Singh"
-                  className="w-36 h-44 object-cover"
+                  className="absolute -top-[6rem] z-10 lg:h-[18rem]"
                 />
+
+                {/* Team Logo */}
+                <img
+                  src="/teamlogo.svg" // replace with your team logo
+                  alt="team logo"
+                  className="absolute top-2"
+                />
+                <h2 className="mt-2 absolute bottom-0 text-white font-bold text-xl self-start z-[10] -left-12 font-ethnocentric lg:text-[25px]">
+                  KARAN <span className="text-white">SINGH</span>
+                </h2>
               </div>
-              <div className="w-full py-2 px-3 flex flex-col items-center border-t border-[#222]">
-                <span className="text-white text-lg font-bold">
-                  KARAN SINGH
-                </span>
-                <span className="text-[#c40100] text-base font-semibold mt-1">
-                  #44
-                </span>
-                <div className="w-3 h-3 rounded-full bg-gray-300 mt-2"></div>
+
+              {/* Buttons */}
+              <div className="absolute h-[20%] bottom-0 flex justify-between items-center   w-full  mt-4  px-2">
+                <h2 className="lg:text-[30px] font-ethnocentric">#44</h2>
+                <img src="/teamflag.svg" alt="" />
+              </div>
+            </div>
+            {/* card 2 */}
+            <div className=" r h-[18rem] shadow-lg  w-72 relative flex flex-col items-center">
+              <div className="relative h-[80%] w-full bg-gradient-to-b from-[#000000] to-[#470000] "> 
+                {/* Image Section */}
+                <img
+                  src="driver/driverimg.png" // replace with your driver image
+                  alt="Karan Singh"
+                  className="absolute -top-[6rem] z-10 lg:h-[18rem]"
+                />
+
+                {/* Team Logo */}
+                <img
+                  src="/teamlogo.svg" // replace with your team logo
+                  alt="team logo"
+                  className="absolute top-2"
+                />
+                <h2 className="mt-2 absolute bottom-0 text-white font-bold text-xl self-start z-[10] -left-12 font-ethnocentric lg:text-[25px]">
+                  KARAN <span className="text-white">SINGH</span>
+                </h2>
+              </div>
+
+              {/* Buttons */}
+              <div className="absolute h-[20%] bottom-0 flex justify-between items-center   w-full  mt-4  px-2">
+                <h2 className="lg:text-[30px] font-ethnocentric">#44</h2>
+                <img src="/teamflag.svg" alt="" />
               </div>
             </div>
           </div>

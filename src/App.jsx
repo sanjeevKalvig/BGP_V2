@@ -8,6 +8,7 @@ import DriverPage from './pages/DriverPage';
 import TeamsDetails from './components/Teams/TeamsDetails';
 import NewsPage from './pages/NewsPage';
 import DriverDetail from './components/DriverDetail.jsx/DriverDetail';
+import EventPage from './pages/EventPage';
 
 export default function App() {
   return (
@@ -22,7 +23,7 @@ export default function App() {
         <Route path='/driverdetail' element={<DriverDetail/>} />
         <Route path='/teamdetail' element={<TeamsDetails/>} />
         <Route path='/news' element={<NewsPage/>} />
-       
+        <Route path='/events' element={<EventPage/>} />
       </Routes>
     </Router>
   );
