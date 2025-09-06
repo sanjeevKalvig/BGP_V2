@@ -57,7 +57,7 @@ const TrackPage = () => {
 
       <div
         relative
-        className="grid grid-cols-2 gap-10 px-[6rem]  lg:py-[10rem]"
+        className="grid grid-cols-2 gap-3 sm:gap-10 px-[1rem] sm:px-[6rem] py-[2rem]  lg:py-[10rem]"
       >
         {cards.map((card, index) => (
           <div
@@ -77,7 +77,7 @@ const TrackPage = () => {
                 alt={card.trackName}
                 className="w-full h-full rounded-md  "
               />
-              <span className="text-white font-semibold font-ethnocentric lg:text-[30px] w-[30%]  ">
+              <span className="text-white font-semibold font-ethnocentric text-[12px] sm:text-[16px] lg:text-[30px] w-[30%]  ">
                 {card.trackName}
               </span>
             </div>

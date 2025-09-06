@@ -5,7 +5,7 @@ import Footer from "../components/HomePage/Footer";
 const ContactUs = () => {
   return (
     <>
-      <div className="relative overflow-hidden bg-[#1A1A1A]">
+      <div className="relative overflow-hidden ">
         <div className="relative z-50">
           <Header />
         </div>

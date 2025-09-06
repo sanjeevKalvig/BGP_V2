@@ -65,7 +65,7 @@ const DriverPage = () => {
       <Header />
 
       {/* Header section with background text */}
-      <div className="relative flex flex-col sm:flex-row items-center justify-between lg:mt-[15rem] px-[6rem] font-ethnocentric">
+      <div className="relative flex flex-col sm:flex-row items-center justify-between my-[4rem] lg:mt-[12rem] lg:mb-[4rem] px-[6rem] font-ethnocentric">
         {/* Big background text */}
         <span
           className="absolute left-[4rem] top-[30%] -translate-y-1/2 text-5xl sm:text-6xl md:text-[70px] 
@@ -86,11 +86,11 @@ const DriverPage = () => {
         <span className="hidden sm:inline-block h-1 w-1/4 bg-[#C40100]"></span>
       </div>
       <div className="w-full flex justify-center items-center  lg:py-[6rem]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  mx-auto gap-5 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  mx-auto gap-10 sm:gap-5 ">
           {cards.map((card, idx) => (
             <div
               key={idx}
-              className="bg-gradient-to-b from-[#000000] to-[#470000] w-[26rem] h-[16rem] rounded-xl shadow-xl p-4 flex flex-col items-center relative
+              className="bg-gradient-to-b from-[#000000] to-[#470000] w-[20rem] sm:w-[24rem] h-[16rem] rounded-xl shadow-xl p-4 flex flex-col items-center relative
                mt-[5rem] "
             >
               {/* Top Logos Row */}

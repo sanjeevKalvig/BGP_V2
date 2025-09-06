@@ -47,7 +47,7 @@ const NewsPage = () => {
     <div className=" ">
       <Header />
       {/* Header section with background text */}
-      <div className="relative flex flex-col sm:flex-row items-center justify-between lg:mt-[15rem] px-[6rem] font-ethnocentric">
+      <div className="relative flex flex-col sm:flex-row items-center justify-between mt-[2rem] lg:mt-[15rem] px-[6rem] font-ethnocentric">
         {/* Big background text */}
         <span
           className="absolute left-[4rem] top-[30%] -translate-y-1/2 text-5xl sm:text-6xl md:text-[70px] 
@@ -68,7 +68,7 @@ const NewsPage = () => {
         <span className="hidden sm:inline-block h-1 w-[10%] bg-[#C40100]"></span>
       </div>
 
-      <div className=" px-[6rem] w-full  flex flex-col justify-center  h-auto lg:mt-[6rem] space-y-7">
+      <div className="px-[2rem] sm:px-[6rem] w-full  flex flex-col justify-center  h-auto mt-[2rem] lg:mt-[6rem] space-y-7">
         <div className=" lg:h-[600px] w-full">
           <img
             src="/news/news.jpg"
@@ -84,14 +84,14 @@ const NewsPage = () => {
           industry
         </p>
       </div>
-      <div className="px-[6rem] w-full flex  justify-center items-center lg:mt-[6rem] lg:mb-[1rem] ">
+      <div className="px-[2rem] sm:px-[6rem] w-full flex  justify-center items-center lg:mt-[6rem] lg:mb-[1rem] ">
         {/* Red line on right */}
         <div className=" sm:inline-block h-1 w-full bg-[#C40100]"></div>
       </div>
 
       {/* News cards  */}
 
-      <div className="px-[6rem] w-full grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:py-20 lg:mb-[4rem]">
+      <div className="px-[2rem] sm:px-[6rem] w-full grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:py-20 lg:mb-[4rem]">
         {cards.map((card, idx) => (
           <div
             key={idx}
@@ -103,7 +103,7 @@ const NewsPage = () => {
               className="h-64 w-full object-cover"
             />
             <div className="py-5 flex-1 flex flex-col text-left">
-              <h3 className="text-2xl font-bold text-white mb-2 font-ethnocentric">
+              <h3 className="sm:text-2xl font-bold text-white mb-2 font-ethnocentric">
                 {card.title}
               </h3>
               <p className="text-lg text-gray-300">{card.description}</p>

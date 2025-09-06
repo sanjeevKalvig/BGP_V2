@@ -15,6 +15,9 @@ import Sponsors from "./pages/Sponsors";
 import AutoPlaySound from "./components/AutoPlaySound";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import BookingConfirmationPage from "./pages/BookingConfirmationPage";
+import DashboardPage from "./pages/DashboardPage";
+
 
 export default function App() {
   return (
@@ -38,6 +41,8 @@ export default function App() {
           <Route path="/sponsors" element={<Sponsors />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage/>} />
+          <Route path="/bookingconfirmation" element={<BookingConfirmationPage/>} />
+          <Route path="/dashboard" element={<DashboardPage/>} />
         </Routes>
       </Router>
     </>

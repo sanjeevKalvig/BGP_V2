@@ -26,8 +26,8 @@ const TicketsPage = () => {
         {/* Red line */}
         <span className="h-0.5 sm:h-1 w-full sm:w-1/3 bg-[#C40100] inline-block mt-2 sm:mt-0"></span>
       </div>
-      <div className="px-[6rem] space-y-20">
-        <div className=" flex items-center gap-7 ">
+      <div className="px-[2rem] sm:px-[6rem] space-y-20">
+        <div className=" flex flex-col sm:flex-row items-center gap-7 ">
           <div
             className="relative bg-gradient-to-t from-[#242424] to-[#000000] w-[85%] lg:w-[32%] xl:w-[27%] 2xl:w-[20%]
                        h-auto lg:h-[420px] xl:h-[460px] 2xl:h-[380px]
@@ -60,29 +60,26 @@ const TicketsPage = () => {
               PURCHASE
             </button>
           </div>
-          <div className="flex flex-col  w-[60%] ">
+          <div className="flex flex-col  sm:w-[60%] ">
             <h2 className="uppercase  lg:text-[40px] font-ethnocentric">
               THE essential experience{" "}
             </h2>
             <p className="text-[16px] font-montserrat">
               The Essential ExperienceGet full-day access to the racing action
-              from general <br /> stands. Feel the roar of the engines and
-              witness <br />
+              from general  stands. Feel the roar of the engines and
+              witness 
               thrilling overtakes up close.
             </p>
           </div>
         </div>
-        <div className="flex items-center  justify-end  gap-10 text-right">
+        <div className="flex flex-col-reverse  sm:flex-row items-center   justify-end  gap-10 sm:text-right">
           {/* Text Section */}
-          <div className="flex flex-col  w-[70%]">
+          <div className="flex flex-col sm:w-[70%]">
             <h2 className="uppercase lg:text-[40px] font-ethnocentric">
               Behind the Scenes Access
             </h2>
             <p className="text-[16px] font-montserrat">
-              The Essential Experience Get full-day access to the racing action
-              from general <br /> stands. Feel the roar of the engines and
-              witness <br />
-              thrilling overtakes up close.
+              The Essential Experience Get full-day access to the racing action from general stands. Feel the roar of the engines and witness thrilling overtakes up close.
             </p>
           </div>
           {/* Card Section */}
@@ -119,7 +116,7 @@ const TicketsPage = () => {
             </button>
           </div>
         </div>
-        <div className=" flex items-center gap-7 ">
+        <div className=" flex flex-col sm:flex-row items-center gap-7 ">
           <div
             className="relative bg-gradient-to-t from-[#242424] to-[#000000] w-[85%] lg:w-[32%] xl:w-[27%] 2xl:w-[20%]
                        h-auto lg:h-[420px] xl:h-[460px] 2xl:h-[380px]
@@ -152,14 +149,14 @@ const TicketsPage = () => {
               PURCHASE
             </button>
           </div>
-          <div className="flex flex-col w-[60%] ">
+          <div className="flex flex-col sm:w-[60%] ">
             <h2 className="uppercase  lg:text-[40px] font-ethnocentric">
               THE essential experience{" "}
             </h2>
             <p className="text-[16px] font-montserrat">
               The Essential ExperienceGet full-day access to the racing action
-              from general <br /> stands. Feel the roar of the engines and
-              witness <br />
+              from general  stands. Feel the roar of the engines and
+              witness 
               thrilling overtakes up close.
             </p>
           </div>

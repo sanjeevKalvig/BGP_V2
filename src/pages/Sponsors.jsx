@@ -148,7 +148,7 @@ const Sponsors = () => {
         {/* Red line */}
         <span className="h-0.5 sm:h-1 w-full sm:w-[30%] bg-[#C40100] inline-block mt-2 sm:mt-0"></span>
       </div>
-      <div className="px-[6rem]">
+      <div className="sm:px-[6rem]">
         <div className=" px-4 sm:px-6 lg:px-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3 sm:gap-4 md:gap-5 mb-6 lg:mb-12 w-full">
           {sponsors.map((sponsor) => (
             <div
@@ -176,7 +176,7 @@ const Sponsors = () => {
           <div className="bg-[#575757] w-4/5 lg:h-[300px] flex justify-center items-center">
             <img src="/logo.png" alt="brandlogo" className="p-4" />
           </div>
-          <p className="w-4/5">
+          <p className="w-4/5 ">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
