@@ -13,6 +13,8 @@ import TrackPage from "./pages/TrackPage";
 import TrackDetail from "./components/Track/TrackDetail";
 import Sponsors from "./pages/Sponsors";
 import AutoPlaySound from "./components/AutoPlaySound";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 
 export default function App() {
   return (
@@ -34,6 +36,8 @@ export default function App() {
           <Route path="/tracks" element={<TrackPage />} />
           <Route path="/trackdetail" element={<TrackDetail />} />
           <Route path="/sponsors" element={<Sponsors />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage/>} />
         </Routes>
       </Router>
     </>

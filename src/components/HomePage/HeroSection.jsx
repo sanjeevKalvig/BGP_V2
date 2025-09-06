@@ -9,7 +9,7 @@ const HeroSection = () => {
       <img
         src="/herobgimg.png"
         alt="herobgimg"
-        className="z-0 absolute 2xl:-top-11"
+        className="z-0 absolute md:top-[12rem] lg:-top-11 2xl:-top-11"
       />
 
       {/* Left vertical label + dots */}
@@ -26,9 +26,11 @@ const HeroSection = () => {
         </div>
         <p className="opacity-50 lg:text-[12px]"> BHARATVA GRAND PRIX</p>
       </span>
-       {/* right vertical dots */}
-      <div className=" hidden lg:right-[2rem] xl:right-[3rem] 2xl:right-[4rem] lg:flex flex-col z-10 gap-4 justify-center 
-      items-center fixed lg:top-[35%] xl:top-[40%] 2xl:top-[48%] right-[4rem] ">
+      {/* right vertical dots */}
+      <div
+        className=" hidden lg:right-[2rem] xl:right-[3rem] 2xl:right-[4rem] lg:flex flex-col z-10 gap-4 justify-center 
+      items-center fixed lg:top-[35%] xl:top-[40%] 2xl:top-[48%] right-[4rem] "
+      >
         <button
           className="h-3 w-3 rounded-full bg-white/20 border border-white/30"
           aria-label="Section 1"
@@ -54,23 +56,17 @@ const HeroSection = () => {
 
       {/* Main content */}
       <div className="relative mx-auto  lg:px-[4rem]  lg:py-20  ">
-        {/* Left: Headline + copy */}
-        <div
-          className="z-[60] lg:left-[1.92rem] xl:left-[2rem] 2xl:left-[4rem] lg:top-[15%] 2xl:top-[21%] absolute space-y-2 "
-        >
+        {/* Left: Headline + copy for big screen */}
+        <div className=" hidden lg:block   z-[60]  lg:left-[1.92rem] xl:left-[2rem] 2xl:left-[4rem] lg:top-[15%] 2xl:top-[21%] absolute space-y-2 ">
           {/* Kicker */}
           <div className="flex flex-col">
-            <p
-              className="text-xs md:text-sm tracking-[0.25em] lg:text-[14.4px] xl:text-[23px] 2xl:text-[26px] uppercase"
-            >
+            <p className="text-xs md:text-sm tracking-[0.25em] lg:text-[14.4px] xl:text-[23px] 2xl:text-[26px] uppercase">
               India’s Premier Motorsports League
             </p>
             <div className="h-0.5 bg-red-600/70 mt-2" />
           </div>
 
-          <h1
-            className="font-extrabold leading-[1.05] font-[Ethnocentric] italic lg:text-[38.4px] xl:text-[54px] 2xl:text-[60px]"
-          >
+          <h1 className="font-extrabold leading-[1.05] font-[Ethnocentric] italic lg:text-[38.4px] xl:text-[54px] 2xl:text-[60px]">
             <span className="block">BUILDING THE</span>
             <span className="block">ADRENALIN</span>
             <span className="block">ECONOMY</span>
@@ -85,16 +81,35 @@ const HeroSection = () => {
             velocity and spectacle.
           </p>
         </div>
+        {/* Left: Headline + copy for mobile */}
+        <div className=" lg:hidden  flex flex-col justify-center items-center mt-[8rem]">
+          {/* Kicker */}
+          <div className="flex flex-col">
+            <p className="text-[11px] md:text-[20px] tracking-[0.25em] lg:text-[14.4px] xl:text-[23px] 2xl:text-[26px] uppercase text-center">
+              India’s Premier <br /> Motorsports League
+            </p>
+            <div className="h-0.5 bg-red-600/70 mt-2" />
+          </div>
+
+          <h1
+            className="font-extrabold leading-[1.05] mt-6  font-[Ethnocentric] italic md:text-[30px]
+           lg:text-[38.4px] xl:text-[54px] 2xl:text-[60px] flex flex-col justify-center items-center"
+          >
+            <span className="block">BUILDING THE</span>
+            <span className="block">ADRENALIN</span>
+            <span className="block">ECONOMY</span>
+          </h1>
+        </div>
 
         {/* Center: Car image */}
         <div
-          className="relative flex justify-center z-50
+          className="relative flex justify-center z-50 md:top-[4rem]
          lg:top-[8rem] xl:top-[8rem] 2xl:top-[10rem] "
         >
           <img
             src="/heroimg.png"
             alt="Performance car silhouette"
-            className=" lg:w-[600px] xl:w-[600px] xl:h-[500px] object-contain opacity-90"
+            className="  md:w-[700px] lg:w-[600px] xl:w-[600px] xl:h-[500px] object-contain opacity-90"
             draggable="false"
           />
           <div
@@ -102,9 +117,16 @@ const HeroSection = () => {
           inset-x-0 bottom-0 h-40  bg-gradient-to-t from-black to-transparent"
           />
         </div>
+        <div className="flex justify-center items-center lg:hidden">
+          <p className=" relative text-center z-[70] md:text-[25px] mb-10 w-[70%] ">
+            We’re shaping a new era of Indian motorsports here elite teams,
+            roaring machines, and passionate fans come together for pure
+            velocity and spectacle.
+          </p>
+        </div>
 
         {/* Right: Info cards */}
-        <div className="absolute z-[60] lg:right-[2rem] lg:top-[38%] xl:right-[4.5rem] xl:top-[40%] 2xl:right-[8rem] 2xl:top-[40%] flex flex-col justify-items-start gap-4 ">
+        <div className=" hidden  absolute z-[60] lg:right-[2rem] lg:top-[38%] xl:right-[4.5rem] xl:top-[40%] 2xl:right-[8rem] 2xl:top-[40%] lg:flex flex-col justify-items-start gap-4 ">
           <div className="flex justify-center items-center  gap-3">
             <img
               src="/herolocicon.svg"
@@ -146,7 +168,7 @@ const HeroSection = () => {
       {/* Scroll indicator */}
       <div className=" z-50 relative bottom-0 lg:-top-[2rem]  flex flex-col justify-center items-center gap-3 ">
         <div className="flex flex-col justify-center items-center">
-          <img src="/mouse.svg" alt="" className="h-18 w-10 " />
+          <img src="/mouse.svg" alt="" className="h-18 w-10 hidden lg:block" />
           <img src="/downarrow.png" alt="" className="h-5 w-15 " />
           <img src="/downarrow.png" alt="" className="h-5 w-15 " />
         </div>
