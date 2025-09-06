@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <div className="relative flex items-center justify-between mb-12 font-[Ethnocentric]">
       {/* Big background text */}
-      <span className="absolute w-1/2 left-0 top-1/2 -translate-y-1/2 text-5xl sm:text-[70px] md:text-[120px] font-extrabold text-[#B2B2B2]/10 select-none pointer-events-none tracking-wide">
+      <span className="absolute w-1/2 left-0 top-1/2 -translate-y-1/2 text-5xl sm:text-[70px] md:text-[70px] lg:text-[120px] font-extrabold text-[#B2B2B2]/10 select-none pointer-events-none tracking-wide">
         DRIVERS
       </span>
 
@@ -27,7 +27,7 @@ const Header = () => {
       </div>
 
       {/* Red line */}
-      <span className="h-1 w-1/3 bg-[#C40100] inline-block"></span>
+      <span className="h-1 w-1/3 bg-[#C40100] hidden lg:inline-block "></span>
     </div>
   );
 };
@@ -50,7 +50,7 @@ const Carousel = () => {
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      if (width < 640) {
+      if (width < 768) {
         setVisibleCount(1);
       } else if (width < 1024) {
         setVisibleCount(2);
@@ -75,12 +75,12 @@ const Carousel = () => {
   return (
     <div className="container mx-auto relative mt-20 mb-20 xl:pl-[3.5rem]">
       {/* Cards */}
-      <div className="flex justify-center gap-6 lg:gap-10 xl:px-16 relative">
+      <div className="flex justify-center gap-6 lg:gap-10 xl:px-16 relative w-full  ">
         {visible.map((driver, index) => {
           // Check if the current card is the center card
           const isCenter = index === Math.floor(visible.length / 2);
           return (
-            <div key={driver.id} className="min-w-[280px] sm:min-w-[330px]">
+            <div key={driver.id} className="min-w-[260px] sm:min-w-[300px]">
               <div
                 className={`border-2 border-red-700 h-60 w-full relative ${
                   isCenter
@@ -111,7 +111,7 @@ const Carousel = () => {
                 )}
 
                 {/* Driver Name */}
-                <span className="absolute z-50 bottom-0 left-[-32px] text-2xl sm:text-4xl font-bold">
+                <span className="absolute z-50 bottom-0 left-[-32px] text-2xl sm:text-3xl font-bold">
                   {driver.name}
                 </span>
               </div>

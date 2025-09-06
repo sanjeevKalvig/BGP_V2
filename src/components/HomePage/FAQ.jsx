@@ -37,20 +37,15 @@ const FAQ = () => {
 
   return (
     <div
-      className=" pt-20 pb-20 sm:pb-56 px-4 sm:px-8 font-montserrat  flex flex-col gap-[4rem] justify-center radial-gradient"
-      style={{
-        "--radial-bottom": "0%",
-        "--radial-right": "0px",
-        "--rotateBottom": "180deg",
-        "--heightBottom": "100%",
-      }}
+      className=" lg:pt-20 lg:pb-20 sm:pb-16 px-4 py-5 sm:px-8  font-montserrat  flex flex-col gap-[4rem] justify-center radial-gradient "
+     
     >
       <h2 className="text-3xl relative font-bold uppercase  flex flex-col left-[4rem]  ">
         <span className="font-[Ethnocentric]">FAQ</span>
         <span className="h-[4px] w-[3rem] bg-[#C40100] inline-block "></span>
       </h2>
-      <div className="sm:px-[5rem] max-w-[1920px] m-auto flex flex-col gap-8 items-center w-full ">
-        <div className="flex flex-col gap-3 sm:gap-5 w-full max-w-[1560px]">
+      <div className="sm:px-[5rem] max-w-[1920px] m-auto flex flex-col gap-8 items-center w-full  ">
+        <div className="flex flex-col gap-3 sm:gap-5 w-full max-w-[1560px] ">
           {items.map((item, index) => (
             <div
               key={index}
@@ -90,6 +85,6 @@ const FAQ = () => {
       </div>
     </div>
   );
-};
+}
 
 export default FAQ;

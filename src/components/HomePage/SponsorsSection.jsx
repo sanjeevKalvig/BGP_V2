@@ -73,7 +73,7 @@ const SponsorsSection = () => {
           <span className="h-[4px] w-[6rem] bg-[#C40100] inline-block"></span>
         </h2>
       </div>
-      <div className="px-4 sm:px-6 md:px-8 lg:px-[6rem] flex flex-col justify-center items-center">
+      <div className="px-4 sm:px-6 md:px-8 lg:px-[6rem] flex flex-col justify-center items-center py-10">
         <div className="flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 lg:p-[6rem] max-w-[1560px] ">
           {/* Logos Grid Section */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5   gap-3 sm:gap-4 md:gap-5  mb-6 sm:mb-8 md:mb-10 w-full ">

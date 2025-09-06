@@ -13,7 +13,7 @@ const ExperieceThrill = () => {
     <>
       <section
         id="speed"
-        className="relative mt-[13rem] text-white h-[min(100vh,900px)] flex items-center justify-center "
+        className="relative mt-[13rem] text-white h-[min(100vh,900px)] flex items-center justify-center  "
       >
         {/* Overlay for dark + red effect */}
         <img
@@ -21,13 +21,13 @@ const ExperieceThrill = () => {
           alt="thrillcar"
           className=" absolute w-full object-cover z-0  "
         />
-        <h1 className="absolute -top-[8rem] font-ethnocentric italic lg:text-[clamp(3rem,6.5vw,160px)] ">
+        <h1 className="absolute sm:top-32 md:top-28 lg:-top-[8rem] font-ethnocentric italic sm:text-[2.8rem] md:text-[3rem] lg:text-[clamp(3rem,6.5vw,160px)] ">
           EXPERIENCE THE <br /> THRILL OF SPEED
         </h1>
 
-        <div className="relative lg:-bottom-[18rem] z-10 text-center px-6">
+        <div className="relative sm:-bottom-[12rem] md:-bottom-[13rem] lg:-bottom-[18rem] z-10 text-center px-6">
           {/* Info Section */}
-          <div className="flex items-center justify-center">
+          <div className=" flex items-center justify-center  bottom-0">
             {/* Teams */}
             <div className="flex gap-2 items-center border-r pr-6">
               <div>
@@ -81,8 +81,8 @@ const ExperieceThrill = () => {
         <div className="relative flex items-center justify-between font-[Ethnocentric]">
           {/* Big background text */}
           <span
-            className="absolute  left-0 top-1/2 -translate-y-1/2 text-[70px]
-         md:text-[120px] font-extrabold text-[#B2B2B2]/10 select-none pointer-events-none tracking-wide "
+            className="absolute  left-0 top-1/2 -translate-y-1/2 text-[70px] sm:text-[55px] md:text-[66px] 
+         lg:text-[120px] font-extrabold text-[#B2B2B2]/10 select-none pointer-events-none tracking-wide "
           >
             RACE TRACK
           </span>
