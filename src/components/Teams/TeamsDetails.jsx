@@ -6,7 +6,7 @@ const TeamsDetails = () => {
   return (
     <div>
       <Header />
-      <div className="relative w-full px-[4rem]">
+      <div className="relative w-full px-[1rem] md:px-[4rem]">
         <div className="flex flex-col items-center justify-center min-h-screen py-[4rem]">
           {/* Top: Team Logo and Name */}
           <div className=" w-full flex flex-col items-center mt-20 mb-8">
@@ -81,18 +81,18 @@ const TeamsDetails = () => {
           </h2>
           <span className="h-0.5 sm:h-1 w-full sm:w-[60%] bg-[#C40100] inline-block mt-2 sm:mt-0"></span>
         </div>
-        <div className="min-h-screen text-white font-sans px-[6rem] flex flex-col gap-8">
+        <div className="min-h-screen my-24 text-white font-sans md:px-[0rem] lg:px-[6rem] flex flex-col gap-8">
           {/* Top: Season Summary */}
-          <div className="w-full  gap-9 flex p-[1rem] ">
-            <div className="w-[60%] flex flex-col gap-9">
+          <div className="w-full  gap-9 flex  ">
+            <div className=" md:w-[56%] lg:w-[60%] flex flex-col gap-9">
               {/* 2025 SEASON */}
               <div className="bg-transparent h-auto p-6  flex-1 flex flex-col gap-4 border text-left rounded-[50px]">
                 <h2 className="text-lg lg:text-[30px]  font-ethnocentric mb-3">
                   2025 SEASON
                 </h2>
-                <div className="grid grid-cols-2 gap-[3rem] mt-2 ">
+                <div className="grid grid-cols-2 gap-[3rem] mt-4 ">
                   <div className="space-y-4">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">
                       Season Position
                     </p>
                     <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -100,7 +100,7 @@ const TeamsDetails = () => {
                     </p>
                   </div>
                   <div className="space-y-4">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">
                       Season Points
                     </p>
                     <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -108,10 +108,10 @@ const TeamsDetails = () => {
                     </p>
                   </div>
                 </div>
-                <div className="h-1 bg-[#383838 lg:mb-[2rem]]"></div>
-                <div className="grid grid-cols-2 gap-[3rem] mt-2  ">
+                <div className="h-1 bg-[#383838] lg:mb-[2rem]]"></div>
+                <div className="grid grid-cols-2 gap-[3rem] mt-4  ">
                   <div className="space-y-4">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">
                       Grand Prix Wins
                     </p>
                     <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -119,7 +119,7 @@ const TeamsDetails = () => {
                     </p>
                   </div>
                   <div className="space-y-4">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">
                       Grand Prix Podiums
                     </p>
                     <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -127,7 +127,7 @@ const TeamsDetails = () => {
                     </p>
                   </div>
                   <div className="space-y-4">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">
                       Grand Prix Poles
                     </p>
                     <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -135,7 +135,7 @@ const TeamsDetails = () => {
                     </p>
                   </div>
                   <div className="space-y-4">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">
                       Grand Prix Top 10s
                     </p>
                     <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -143,7 +143,7 @@ const TeamsDetails = () => {
                     </p>
                   </div>
                   <div className="space-y-4">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">
                       DK: Fastest Laps
                     </p>
                     <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -151,7 +151,7 @@ const TeamsDetails = () => {
                     </p>
                   </div>
                   <div className="space-y-4">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">DNS</p>
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">DNS</p>
                     <p className="font-bold  lg:text-[30px] font-ethnocentric">
                       56
                     </p>
@@ -164,81 +164,81 @@ const TeamsDetails = () => {
               </div>
               {/* TEAM SUMMARY */}
               <div className="bg-[#0D0D0D] p-6 flex-1 flex flex-col gap-2 px-[2rem] rounded-[50px]">
-                <h2 className="text-lg font-bold tracking-widest mb-3 font-ethnocentric lg:text-[36px]">
+                <h2 className="text-lg font-bold tracking-widest mb-3 font-ethnocentric lg:text-[clamp(24px,2.2vw,36px)]">
                   TEAM SUMMARY
                 </h2>
-                <div className=" w-full flex flex-col gap-6 mt-[2rem]">
+                <div className=" w-full flex flex-col gap-8 mt-[2rem]">
                   <div className="w-full flex justify-between">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.5vw,28px)] ">
                       Grand Prix Entered
                     </p>
-                    <p className="font-bold text-lg lg:text-[30px] font-ethnocentric">
+                    <p className="font-bold text-lg lg:text-[clamp(20px,2vw,30px)] font-ethnocentric">
                       900
                     </p>
                   </div>
                   {/* Line */}
-                  <div className="h-1 bg-[#383838] lg:mt-[2rem]"></div>
+                  <div className="h-1 bg-[#383838] "></div>
 
                   <div className="w-full flex justify-between">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.5vw,28px)]">
                       Team Points
                     </p>
-                    <p className="font-bold text-lg lg:text-[30px] font-ethnocentric">
+                    <p className="font-bold text-lg lg:text-[clamp(20px,2vw,30px)] font-ethnocentric">
                       9999
                     </p>
                   </div>
                   {/* Line */}
-                  <div className="h-1 bg-[#383838] lg:mt-[2rem]"></div>
+                  <div className="h-1 bg-[#383838] "></div>
                   <div className="w-full flex justify-between">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.5vw,28px)]">
                       Highest Race Finish
                     </p>
-                    <p className="font-bold text-lg lg:text-[30px] font-ethnocentric">
+                    <p className="font-bold text-lg lg:text-[clamp(20px,2vw,30px)] font-ethnocentric">
                       1 (X200)
                     </p>
                   </div>
                   {/* Line */}
-                  <div className="h-1 bg-[#383838] lg:mt-[2rem]"></div>
+                  <div className="h-1 bg-[#383838] "></div>
                   <div className="w-full flex justify-between">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.5vw,28px)]">
                       Podiums
                     </p>
-                    <p className="font-bold text-lg lg:text-[30px] font-ethnocentric">
+                    <p className="font-bold text-lg lg:text-[clamp(20px,2vw,30px)] font-ethnocentric">
                       500
                     </p>
                   </div>
                   {/* Line */}
-                  <div className="h-1 bg-[#383838] lg:mt-[2rem]"></div>
+                  <div className="h-1 bg-[#383838] "></div>
                   <div className="w-full flex justify-between">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.5vw,28px)]">
                       Highest Grid Position
                     </p>
-                    <p className="font-bold text-lg lg:text-[30px] font-ethnocentric">
+                    <p className="font-bold text-lg lg:text-[clamp(20px,2vw,30px)] font-ethnocentric">
                       1 (X172)
                     </p>
                   </div>
                   {/* Line */}
-                  <div className="h-1 bg-[#383838] lg:mt-[2rem]"></div>
+                  <div className="h-1 bg-[#383838] "></div>
                   <div className="w-full flex justify-between">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.5vw,28px)]">
                       Pole Positions
                     </p>
-                    <p className="font-bold text-lg lg:text-[30px] font-ethnocentric">
+                    <p className="font-bold text-lg lg:text-[clamp(20px,2vw,30px)] font-ethnocentric">
                       200
                     </p>
                   </div>
                   {/* Line */}
-                  <div className="h-1 bg-[#383838] lg:mt-[2rem]"></div>
+                  <div className="h-1 bg-[#383838] "></div>
                   <div className="w-full flex justify-between">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.5vw,28px)]">
                       World Championships
                     </p>
-                    <p className="font-bold text-lg lg:text-[30px] font-ethnocentric">
+                    <p className="font-bold text-lg lg:text-[clamp(20px,2vw,30px)] font-ethnocentric">
                       9
                     </p>
                   </div>
                   {/* Line */}
-                  <div className="h-1 bg-[#383838] lg:mt-[2rem]"></div>
+                  <div className="h-1 bg-[#383838] "></div>
                 </div>
 
                 <button className="mt-4 py-2 px-5 h-10 bg-white text-black w-[10rem]  rounded-[25px] font-semibold text-sm">
@@ -247,12 +247,12 @@ const TeamsDetails = () => {
               </div>
             </div>
 
-            <div className=" w-[35%] flex flex-col gap-9 h-[70%]">
+            <div className=" md:w-[45%] lg:w-[40%] flex flex-col gap-9 h-[70%]">
               {/* SPRINT RACES */}
               <div className="bg-transparent p-6 flex-1 flex flex-col justify-center border h-[300px] rounded-[45px]">
-                <div className="grid grid-cols-2 gap-[3rem]  ">
+                <div className="grid grid-cols-2 gap-[1rem]  ">
                   <div className="space-y-4 ">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.3vw,24px)]">
                       Sprint Races
                     </p>
                     <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -260,7 +260,7 @@ const TeamsDetails = () => {
                     </p>
                   </div>
                   <div className="space-y-4">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.3vw,24px)]">
                       Sprint Points
                     </p>
                     <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -268,7 +268,7 @@ const TeamsDetails = () => {
                     </p>
                   </div>
                   <div className="space-y-4">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.3vw,24px)]">
                       Sprint Wins
                     </p>
                     <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -276,7 +276,7 @@ const TeamsDetails = () => {
                     </p>
                   </div>
                   <div className="space-y-4">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.3vw,24px)]">
                       Sprint Podiums
                     </p>
                     <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -284,7 +284,7 @@ const TeamsDetails = () => {
                     </p>
                   </div>
                   <div className="space-y-4">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.3vw,24px)]">
                       Sprint Poles
                     </p>
                     <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -292,8 +292,8 @@ const TeamsDetails = () => {
                     </p>
                   </div>
                   <div className="space-y-4">
-                    <p className="text-xs text-gray-400 lg:text-[24px]">
-                      Sprint Top 10ps
+                    <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.3vw,24px)]">
+                      Sprint Top 10s
                     </p>
                     <p className="font-bold  lg:text-[30px] font-ethnocentric">
                       56
@@ -303,57 +303,57 @@ const TeamsDetails = () => {
               </div>
 
               {/* TEAM PROFILE */}
-              <div className=" bg-[#0D0D0D] flex flex-col justify-center items-center p-6 rounded-[50px] ">
-                <h2 className="text-lg font-bold tracking-widest w-[82%] mb-3 lg:text-[24px] font-ethnocentric">
+              <div className=" bg-[#0D0D0D] flex flex-col justify-center  p-4 lg:px-12 py-6 rounded-[50px] ">
+                <h2 className="text-baseline font-bold tracking-widest w-[82%] mb-3 lg:text-[clamp(10px,1.5vw,39px)] font-ethnocentric">
                   TEAM PROFILE
                 </h2>
 
-                <div className="flex flex-col gap-5  w-[82%] mt-8">
+                <div className="flex flex-col gap-5 mt-8">
                   <div className="flex flex-col justify-center items-left gap-2">
-                    <span className="text-xs text-gray-400 lg:text-[18px]">
+                    <span className="text-base text-gray-400 lg:text-[18px]">
                       Full Team Name
                     </span>
-                    <span className="font-semibold lg:text-[24px] font-ethnocentric">
+                    <span className="font-semibold lg:text-[clamp(14px,1.6vw,30px)] font-ethnocentric">
                       DELHI ETERNALS
                     </span>
                   </div>
-                  <div className="flex flex-col justify-center items-left">
-                    <span className="text-xs text-gray-400 lg:text-[18px]">
+                  <div className="flex flex-col justify-center items-left gap-2">
+                    <span className="text-base text-gray-400 lg:text-[18px]">
                       Technical Chief
                     </span>
-                    <span className="font-semibold lg:text-[24px] font-ethnocentric">
+                    <span className="font-semibold lg:text-[clamp(14px,1.6vw,30px)] font-ethnocentric">
                       KARAN SINGH
                     </span>
                   </div>
-                  <div className="flex flex-col justify-center items-left">
-                    <span className="text-xs text-gray-400 lg:text-[18px]">
+                  <div className="flex flex-col justify-center items-left gap-2">
+                    <span className="text-base text-gray-400 lg:text-[18px]">
                       Base
                     </span>
-                    <span className="font-semibold lg:text-[24px] font-ethnocentric">
+                    <span className="font-semibold lg:text-[clamp(14px,1.6vw,30px)] font-ethnocentric">
                       DELHI, INDIA
                     </span>
                   </div>
-                  <div className="flex flex-col justify-center items-left">
-                    <span className="text-xs text-gray-400 lg:text-[18px]">
+                  <div className="flex flex-col justify-center items-left gap-2">
+                    <span className="text-base text-gray-400 lg:text-[18px]">
                       Chassis
                     </span>
-                    <span className="font-semibold lg:text-[24px] font-ethnocentric">
+                    <span className="font-semibold lg:text-[clamp(14px,1.6vw,30px)] font-ethnocentric">
                       MCL22
                     </span>
                   </div>
-                  <div className="flex flex-col justify-center items-left">
-                    <span className="text-xs text-gray-400 lg:text-[18px]">
+                  <div className="flex flex-col justify-center items-left gap-2">
+                    <span className="text-base text-gray-400 lg:text-[18px]">
                       Team Chief
                     </span>
-                    <span className="font-semibold lg:text-[24px] font-ethnocentric">
+                    <span className="font-semibold lg:text-[clamp(14px,1.6vw,30px)] font-ethnocentric">
                       KARAN SINGH
                     </span>
                   </div>
-                  <div className="flex flex-col justify-center items-left">
-                    <span className="text-xs text-gray-400 lg:text-[18px]">
+                  <div className="flex flex-col justify-center items-left gap-2">
+                    <span className="text-base text-gray-400 lg:text-[18px]">
                       Power Unit
                     </span>
-                    <span className="font-semibold lg:text-[24px] font-ethnocentric">
+                    <span className="font-semibold lg:text-[clamp(14px,1.6vw,30px)] font-ethnocentric">
                       MERCEDES
                     </span>
                   </div>
