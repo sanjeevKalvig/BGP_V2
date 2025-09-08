@@ -14,7 +14,7 @@ const Teams = () => {
   return (
     <div className="w-full text-white px-4 sm:px-6 md:px-8 lg:px-[4rem] flex flex-col relative mt-6 sm:mt-8 md:mt-[6rem]">
       {/* Header section with background text */}
-      <div className="relative flex flex-col sm:flex-row items-center justify-between mb-6 sm:mb-8 md:mb-[3rem] font-[Ethnocentric]">
+      <div className="relative  flex-col sm:flex-row items-center justify-between mb-6 sm:mb-8 md:mb-[3rem] font-[Ethnocentric] hidden lg:flex">
         {/* Big background text */}
         <span
           className="absolute w-full sm:w-1/2 left-0 top-1/2 -translate-y-1/2 text-5xl 
@@ -34,6 +34,12 @@ const Teams = () => {
         {/* Red line */}
         <span className="h-0.5 sm:h-1 w-full sm:w-1/3 bg-[#C40100] inline-block mt-2 sm:mt-0"></span>
       </div>
+
+       {/* Mobile + tab header */}
+        <h2 className="text-2xl sm:text-[2rem] md:text-[3rem]  font-bold uppercase flex flex-col justify-center items-center lg:hidden gap-2 lg:gap-0 mb-10">
+          <span className="font-[Ethnocentric]"> RACE TRACK</span>
+          <span className="h-[4px] w-[6rem] sm:w-[40%] bg-[#C40100] inline-block" />
+        </h2>
 
       {/* Teams grid */}
       <div className="container w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 px-2 sm:px-0 lg:pl-[3.5rem] lg:pr-[5rem]">

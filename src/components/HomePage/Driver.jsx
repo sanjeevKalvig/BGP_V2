@@ -12,23 +12,30 @@ const Driver = () => {
 
 const Header = () => {
   return (
-    <div className="relative flex items-center justify-between mb-12 font-[Ethnocentric]">
-      {/* Big background text */}
-      <span className="absolute w-1/2 left-0 top-1/2 -translate-y-1/2 text-5xl sm:text-[70px] md:text-[70px] lg:text-[120px] font-extrabold text-[#B2B2B2]/10 select-none pointer-events-none tracking-wide">
-        DRIVERS
-      </span>
-
-      {/* Foreground small header */}
-      <div className="z-10 flex flex-col items-center mt-10 translate-x-11">
-        <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-white px-3 py-1 mr-3 relative">
+    <>
+      <div className="relative  items-center justify-between mb-12 font-[Ethnocentric] hidden lg:flex">
+        {/* Big background text */}
+        <span className="absolute w-1/2 left-0 top-1/2 -translate-y-1/2 text-5xl sm:text-[70px] md:text-[70px] lg:text-[120px] font-extrabold text-[#B2B2B2]/10 select-none pointer-events-none tracking-wide">
           DRIVERS
         </span>
-        <span className="h-[2px] sm:h-[2px] w-[10rem] bg-[#C40100] inline-block"></span>
-      </div>
 
-      {/* Red line */}
-      <span className="h-1 w-1/3 bg-[#C40100] hidden lg:inline-block "></span>
-    </div>
+        {/* Foreground small header */}
+        <div className="z-10 flex flex-col items-center mt-10 translate-x-11">
+          <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-white px-3 py-1 mr-3 relative">
+            DRIVERS
+          </span>
+          <span className="h-[2px] sm:h-[2px] w-[10rem] bg-[#C40100] inline-block"></span>
+        </div>
+
+        {/* Red line */}
+        <span className="h-1 w-1/3 bg-[#C40100] hidden lg:inline-block "></span>
+      </div>
+      {/* Mobile + tab header */}
+      <h2 className="text-2xl sm:text-[2rem] md:text-[3rem]  font-bold uppercase flex flex-col justify-center items-center lg:hidden gap-2 lg:gap-0">
+        <span className="font-[Ethnocentric]"> RACE TRACK</span>
+        <span className="h-[4px] w-[6rem] sm:w-[40%] bg-[#C40100] inline-block" />
+      </h2>
+    </>
   );
 };
 
