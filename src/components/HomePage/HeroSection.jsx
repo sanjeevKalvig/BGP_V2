@@ -4,12 +4,12 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative w-full lg:px-[3rem] xl:px-[4rem] text-white overflow-hidden"
+      className="relative w-full lg:px-[3rem] xl:px-[4rem] text-white overflow-hidden "
     >
       <img
         src="/herobgimg.png"
         alt="herobgimg"
-        className="z-0 absolute md:top-[12rem] lg:-top-11 2xl:-top-11"
+        className="z-0 absolute top-[10rem] sm:top-[13rem] md:top-[12rem] lg:-top-11 2xl:-top-11"
       />
 
       {/* Left vertical label + dots */}
@@ -54,6 +54,43 @@ const HeroSection = () => {
         <img src="/arrowdown.svg" alt="" />
       </div>
 
+      {/* vertical countdown  */}
+      <div className="p-2 rounded-3xl absolute top-20 left-4  sm:top-28 sm:left-8 md:left-10 flex justify-center items-center pl-10 -translate-x-1/2
+       bg-[#840000] shadow-[0_0_40px_red] z-40 lg:hidden">
+        <div className="flex flex-col items-center gap-6 rounded-3xl border-2 border-[#c40100] bg-black">
+          {/* Timer */}
+          <div className="flex flex-col items-center space-y-1 text-white font-bold p-3">
+            {/* Days */}
+            <div className="flex flex-col items-center">
+              <p className="text-[17px] sm:text-[25px] md:text-[30px]">23</p>
+              <p className="text-[4px] sm:text-[10px] md:text-[10px]">DAYS</p>
+            </div>
+
+            {/* Hours */}
+            <div className="flex flex-col items-center">
+              <p className="text-[17px] sm:text-[25px] md:text-[30px]">14</p>
+              <p className="text-[4px] sm:text-[10px] md:text-[10px]">HOURS</p>
+            </div>
+
+            {/* Minutes */}
+            <div className="flex flex-col items-center">
+              <p className="text-[17px] sm:text-[25px] md:text-[30px]">36</p>
+              <p className="text-[4px] sm:text-[10px] md:text-[10px]">MINUTES</p>
+            </div>
+
+            {/* Seconds */}
+            <div className="flex flex-col items-center">
+              <p className="text-[17px] sm:text-[25px] md:text-[30px]">05</p>
+              <p className="text-[4px] sm:text-[10px] md:text-[10px]">SECONDS</p>
+            </div>
+
+            <p className="text-[5px] sm:text-[8px] md:text-[12px] text-center uppercase font-bold">
+              Race <br /> Count <br /> down
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Main content */}
       <div className="relative mx-auto  lg:px-[4rem]  lg:py-20  ">
         {/* Left: Headline + copy for big screen */}
@@ -81,18 +118,18 @@ const HeroSection = () => {
             velocity and spectacle.
           </p>
         </div>
-        {/* Left: Headline + copy for mobile */}
-        <div className=" lg:hidden  flex flex-col justify-center items-center mt-[8rem]">
+        {/* Left: Headline + copy for mobile + tab */}
+        <div className=" lg:hidden  flex flex-col justify-center items-center mt-[3rem] sm:mt-[4rem]  ">
           {/* Kicker */}
           <div className="flex flex-col">
-            <p className="text-[11px] md:text-[20px] tracking-[0.25em] lg:text-[14.4px] xl:text-[23px] 2xl:text-[26px] uppercase text-center">
+            <p className="text-[12px] sm:text-[18px] md:text-[20px] tracking-[0.25em] lg:text-[14.4px] xl:text-[23px] 2xl:text-[26px] uppercase text-center">
               India’s Premier <br /> Motorsports League
             </p>
             <div className="h-0.5 bg-red-600/70 mt-2" />
           </div>
 
           <h1
-            className="font-extrabold leading-[1.05] mt-6  font-[Ethnocentric] italic md:text-[30px]
+            className="font-extrabold leading-[1.05] mt-6  font-[Ethnocentric] italic text-[20px] sm:text-[30px] md:text-[30px]
            lg:text-[38.4px] xl:text-[54px] 2xl:text-[60px] flex flex-col justify-center items-center"
           >
             <span className="block">BUILDING THE</span>
@@ -103,13 +140,13 @@ const HeroSection = () => {
 
         {/* Center: Car image */}
         <div
-          className="relative flex justify-center z-50 md:top-[4rem]
+          className="relative flex justify-center z-50 top-[5rem] sm:top-[8rem] md:top-[10rem]
          lg:top-[8rem] xl:top-[8rem] 2xl:top-[10rem] "
         >
           <img
             src="/heroimg.png"
             alt="Performance car silhouette"
-            className="  md:w-[700px] lg:w-[600px] xl:w-[600px] xl:h-[500px] object-contain opacity-90"
+            className=" w-[90%]  lg:w-[600px] xl:w-[600px] xl:h-[500px] object-contain opacity-90"
             draggable="false"
           />
           <div
@@ -117,8 +154,8 @@ const HeroSection = () => {
           inset-x-0 bottom-0 h-40  bg-gradient-to-t from-black to-transparent"
           />
         </div>
-        <div className="flex justify-center items-center lg:hidden">
-          <p className=" relative text-center z-[70] md:text-[25px] mb-10 w-[70%] ">
+        <div className="flex justify-center items-center lg:hidden mt-10">
+          <p className=" relative text-center z-[70] text-[13px] sm:text-[16px] md:text-[18px] mb-10 w-[70%] ">
             We’re shaping a new era of Indian motorsports here elite teams,
             roaring machines, and passionate fans come together for pure
             velocity and spectacle.

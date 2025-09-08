@@ -10,7 +10,7 @@ import {
 
 const ExperieceThrill = () => {
   return (
-    <>
+    <div className="border">
       <section
         id="speed"
         className="relative mt-[13rem] text-white h-[min(100vh,900px)] flex items-center justify-center  "
@@ -185,7 +185,7 @@ const ExperieceThrill = () => {
           officia odit .
         </p>
       </section>
-    </>
+    </div>
   );
 };
 
