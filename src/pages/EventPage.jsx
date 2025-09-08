@@ -80,12 +80,12 @@ const EventPage = () => {
         />
 
         {/* Hero Content */}
-        <div className="absolute text-white text-left z-[60] bottom-12 left-[6rem]">
+        <div className="absolute text-white text-left z-[60] bottom-12 left-[12px] sm:left-[4rem] md:left-[6rem]">
           <div className="max-w-5xl mx-auto text-left space-y-6">
             <h3 className="text-lg font-bold tracking-wider lg:text-[50px] font-ethnocentric">
               NEXT
             </h3>
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight lg:text-[50px] text-[#A4A4A4] font-ethnocentric">
+            <h1 className="text-xl sm:text-4xl md:text-5xl font-extrabold leading-tight lg:text-[50px] text-[#A4A4A4] font-ethnocentric">
               BUDDH INTERNATIONAL <br /> CIRCUIT
             </h1>
 
@@ -155,11 +155,11 @@ const EventPage = () => {
       </div>
 
       {/* Upcoming Cards */}
-      <div className="flex justify-center items-center gap-6 px-[6rem] ">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-6 px-[1rem] sm:px-[4rem] lg:px-[6rem] ">
         {eventData.slice(0, 2).map((event, index) => (
           <div
             key={index}
-            className="relative bg-[#111] rounded-xl overflow-hidden shadow-lg group w-1/2 lg:h-[500px]"
+            className="relative bg-[#111] rounded-xl overflow-hidden shadow-lg group w-[100%] sm:w-[80%] lg:w-1/2 h-[450px] lg:h-[500px]"
           >
             {/* Card Background */}
             <img
@@ -169,7 +169,7 @@ const EventPage = () => {
             />
 
             {/* Card Content */}
-            <div className="absolute p-6 z-10 text-white space-y-4 bottom-0">
+            <div className="absolute p-3 sm:p-6 z-10 text-white space-y-4 bottom-0">
               <h3 className="text-lg font-bold tracking-wider font-ethnocentric">
                 {event.status}
               </h3>
@@ -222,11 +222,11 @@ const EventPage = () => {
       </div>
 
       {/* Previous Cards */}
-      <div className="flex justify-center items-center gap-6 px-[6rem] mb-[8rem]">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-6 px-[1rem] sm:px-[4rem] lg:px-[6rem] mb-[8rem]">
         {previousEventData.slice(0, 2).map((event, index) => (
           <div
             key={index}
-            className="relative bg-[#111] rounded-xl overflow-hidden shadow-lg group w-1/2 lg:h-[500px]"
+            className="relative bg-[#111] rounded-xl overflow-hidden shadow-lg group w-[100%] sm:w-[80%] lg:w-1/2 h-[450px] lg:h-[500px]"
           >
             {/* Card Background */}
             <img
@@ -236,7 +236,7 @@ const EventPage = () => {
             />
 
             {/* Card Content */}
-            <div className="absolute p-6 z-10 text-white space-y-4 bottom-0">
+            <div className="absolute p-3 sm:p-6 z-10 text-white space-y-4 bottom-0">
               <h3 className="text-lg font-bold tracking-wider font-ethnocentric">
                 {event.status}
               </h3>

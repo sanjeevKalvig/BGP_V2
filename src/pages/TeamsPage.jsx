@@ -78,7 +78,7 @@ const TeamsPage = () => {
         <span className="hidden sm:inline-block h-1 w-1/4 bg-[#C40100]"></span>
       </div>
 
-      <div className="min-h-screen bg-black flex items-center justify-center p-8">
+      <div className="min-h-screen bg-black flex items-center justify-center p-2 sm:p-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cards.map(
             ({
@@ -91,7 +91,7 @@ const TeamsPage = () => {
             }) => (
               <div
                 key={id}
-                className=" relative bg-gradient-to-b from-[#000000] to-[#470000] rounded-xl shadow-lg p-4 w-[25rem] h-[16rem] overflow-hidden "
+                className=" relative bg-gradient-to-b from-[#000000] to-[#470000] rounded-xl shadow-lg p-4 w-[20rem] sm:w-[25rem] h-[16rem] overflow-hidden "
               >
                  <div className="absolute w-full flex justify-center items-center opacity-40 top-7">
                     <img src={teamLogo} alt="" className="opacity-40 w-[95%]" />
