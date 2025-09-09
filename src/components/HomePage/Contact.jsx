@@ -14,7 +14,7 @@ const Contact = () => {
         <span className="h-[4px] w-[6rem] sm:w-[40%] bg-[#C40100] inline-block" />
       </h2>
 
-      <div className="bg-black text-white py-20 flex flex-col items-center  max-w-[1600px] ">
+      <div className="bg-black text-white py-14 flex flex-col items-center  max-w-[1600px] ">
         <div className="w-full grid grid-cols-1 lg:grid-cols-[40%_25%_30%]  justify-center  gap-8">
           {/* Left Form Fields */}
           <div className="flex flex-col space-y-8">

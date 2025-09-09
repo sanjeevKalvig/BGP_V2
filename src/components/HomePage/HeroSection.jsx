@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative w-full lg:px-[3rem] xl:px-[4rem] text-white overflow-hidden "
+      className="relative  w-full lg:px-[3rem] xl:px-[4rem] text-white overflow-hidden "
     >
       <img
         src="/herobgimg.png"
@@ -92,7 +92,7 @@ const HeroSection = () => {
       </div>
 
       {/* Main content */}
-      <div className="relative mx-auto  lg:px-[4rem]  lg:py-20  ">
+      <div className="relative max-w-[1600px] mx-auto lg:px-[4rem]  lg:py-20  ">
         {/* Left: Headline + copy for big screen */}
         <div className=" hidden lg:block   z-[60]  lg:left-[1.92rem] xl:left-[2rem] 2xl:left-[4rem] lg:top-[15%] 2xl:top-[21%] absolute space-y-2 ">
           {/* Kicker */}

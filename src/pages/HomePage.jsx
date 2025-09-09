@@ -16,19 +16,35 @@ const HomePage = () => {
     <>
       <Header />
       <HeroSection />
+
       <ExperieceThrill />
-      <div className=" max-w-[1920px] m-auto  ">
+
+      <div className=" max-w-[1600px] m-auto  ">
         <Teams />
       </div>
-      <Driver />
-      <div className=" sm:px-[6rem] max-w-[1920px] m-auto  ">
+
+      <div className=" max-w-[1600px] m-auto  ">
+        <Driver />
+      </div>
+
+      <div className=" sm:px-[6rem] max-w-[1600px] m-auto  ">
         <Tickets />
       </div>
 
-      <SponsorsSection />
+
+      <div className=" max-w-[1600px] m-auto  ">
+        <SponsorsSection />
+      </div>
+
       {/*  <News /> */}
-      <Contact />
-      <FAQ />
+
+      <div className=" max-w-[1600px] m-auto  ">
+        <Contact />
+      </div>
+
+      <div className=" max-w-[1600px] m-auto  ">
+        <FAQ />
+      </div>
 
       <Footer />
     </>

@@ -23,12 +23,12 @@ const ExperieceThrill = () => {
         />
         <h1
           className="  absolute top-20 sm:top-32 md:top-28 lg:-top-[8rem] font-ethnocentric italic text-[1.5rem] sm:text-[2.8rem] md:text-[3rem]
-         lg:text-[clamp(3rem,6.5vw,160px)] "
+         lg:text-[clamp(3rem,6.5vw,120px)]  "
         >
           EXPERIENCE THE <br /> THRILL OF SPEED
         </h1>
 
-        <div className="relative -bottom-24 sm:-bottom-[12rem] md:-bottom-[13rem] lg:-bottom-[18rem] z-10 text-center px-6 ">
+        <div className="relative  -bottom-24 sm:-bottom-[12rem] md:-bottom-[13rem] lg:-bottom-[18rem] z-10 text-center px-6 ">
           {/* Info Section */}
           <div className=" flex items-center justify-center ">
             {/* Teams */}
@@ -87,7 +87,7 @@ const ExperieceThrill = () => {
         </div>
       </section>
       {/* track section */}
-      <section className="relative z-10 px-[4rem] sm:mt-[6rem] mb-[6rem]  ">
+      <section className="relative max-w-[1600px] mx-auto z-10 px-[4rem] sm:mt-[6rem] mb-[6rem]  ">
         {/* Header section with background text */}
         <div className="relative  items-center justify-between font-[Ethnocentric] hidden lg:flex">
           {/* Big background text */}

@@ -12,7 +12,7 @@ const Teams = () => {
   ];
 
   return (
-    <div className="w-full text-white px-4 sm:px-6 md:px-8 lg:px-[4rem] flex flex-col relative mt-6 sm:mt-8 md:mt-[6rem]">
+    <div className="w-full text-white px-4 sm:px-6 md:px-8 lg:px-[4rem] flex flex-col relative mt-6 sm:mt-8 md:mt-14">
       {/* Header section with background text */}
       <div className="relative  flex-col sm:flex-row items-center justify-between mb-6 sm:mb-8 md:mb-[3rem] font-[Ethnocentric] hidden lg:flex">
         {/* Big background text */}

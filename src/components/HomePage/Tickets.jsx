@@ -36,7 +36,7 @@ const Tickets = () => {
         </h2>
 
       {/* Cards */}
-      <div className="flex flex-col lg:flex-row h-auto justify-center items-center gap-6 lg:gap-4 xl:gap-6 2xl:gap-8 p-10 lg:p-14 xl:p-16 2xl:p-20 font-montserrat">
+      <div className="flex flex-col lg:flex-row h-auto justify-center items-center gap-6 lg:gap-4 xl:gap-6 2xl:gap-8 p-10 lg:p-14 xl:p-16 2xl:p-20 lg:py-14 font-montserrat">
         {ticketCategories.map((ticket, index) => (
           <div
             key={index}

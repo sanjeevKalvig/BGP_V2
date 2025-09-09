@@ -80,7 +80,7 @@ const Carousel = () => {
   });
 
   return (
-    <div className="container mx-auto relative mt-20 mb-20 xl:pl-[3.5rem]">
+    <div className="container mx-auto relative mt-14 mb-20 xl:pl-[3.5rem]">
       {/* Cards */}
       <div className="flex justify-center gap-6 lg:gap-10 xl:px-16 relative w-full  ">
         {visible.map((driver, index) => {
