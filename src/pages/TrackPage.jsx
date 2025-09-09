@@ -38,7 +38,7 @@ const TrackPage = () => {
         {/* Big background text */}
         <span
           className="absolute w-full sm:w-1/2 left-0 top-1/2 -translate-y-1/2 text-5xl 
-          sm:text-6xl md:text-[70px] lg:text-[120px] font-extrabold text-[#B2B2B2]/10 select-none 
+          sm:text-6xl md:text-[70px] xl:text-[120px] font-extrabold text-[#B2B2B2]/10 select-none 
           pointer-events-none tracking-wide px-[4rem]"
         >
           TRACKS

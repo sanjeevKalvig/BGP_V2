@@ -57,11 +57,11 @@ const TeamsPage = () => {
     <div className=" relative w-full">
       <Header />
       {/* Header section with background text */}
-     <div className="relative flex flex-col sm:flex-row items-center justify-between lg:mt-[15rem] px-[6rem] font-ethnocentric">
+      <div className="relative hidden sm:flex flex-col sm:flex-row items-center justify-between sm:mt-[6rem] xl:mt-[12rem] px-[6rem] font-ethnocentric ">
         {/* Big background text */}
         <span
-          className="absolute left-[4rem] top-[30%] -translate-y-1/2 text-5xl sm:text-6xl md:text-[70px] 
-          lg:text-[120px] font-extrabold text-[#B2B2B2]/10 select-none pointer-events-none tracking-wide"
+          className="absolute left-[4rem] top-[30%] -translate-y-1/2 text-5xl sm:text-6xl md:text-[70px] lg:text-[80px]
+          xl:text-[120px] font-extrabold text-[#B2B2B2]/10 select-none pointer-events-none tracking-wide"
         >
           TEAMS
         </span>
@@ -75,10 +75,16 @@ const TeamsPage = () => {
         </div>
 
         {/* Red line on right */}
-        <span className="hidden sm:inline-block h-1 w-1/4 bg-[#C40100]"></span>
+        <span className="hidden  h-1 w-1/4 sm:hidden lg:block bg-[#C40100]"></span>
       </div>
 
-      <div className="min-h-screen bg-black flex items-center justify-center p-2 sm:p-8">
+      {/* Mobile + tab header */}
+       <h2 className="text-2xl sm:text-[2rem] md:text-[3rem]  font-bold uppercase flex flex-col justify-center items-center lg:hidden gap-2 lg:gap-0 mb-2 mt-10 sm:hidden">
+          <span className="font-[Ethnocentric]">Teams</span>
+          <span className="h-[4px] w-[6rem] sm:w-[40%] bg-[#C40100] inline-block" />
+        </h2>
+
+      <div className="min-h-screen bg-black flex items-center justify-center p-2 sm:p-8  ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cards.map(
             ({
@@ -91,40 +97,41 @@ const TeamsPage = () => {
             }) => (
               <div
                 key={id}
-                className=" relative bg-gradient-to-b from-[#000000] to-[#470000] rounded-xl shadow-lg p-4 w-[20rem] sm:w-[25rem] h-[16rem] overflow-hidden "
+                className=" relative bg-gradient-to-b from-[#000000] to-[#470000] rounded-xl shadow-lg p-4 w-[20rem] h-[17rem]  sm:w-[32rem] sm:h-[18rem] md:w-[22rem] md:h-[17rem]
+                 lg:w-[20rem] lg:h-[14rem] xl:w-[24rem] xl:h-[15rem] 2xl:w-[25rem] 2xl:h-[18rem] overflow-hidden b"
               >
-                 <div className="absolute w-full flex justify-center items-center opacity-40 top-7">
-                    <img src={teamLogo} alt="" className="opacity-40 w-[95%]" />
-                 </div>
+                <div className="absolute w-full flex justify-center items-center opacity-40 top-7">
+                  <img src={teamLogo} alt="" className="opacity-40 w-[95%]" />
+                </div>
                 <div className="absolute h-full flex items-center justify-center  -top-7 ">
                   <img
                     src={carImage}
                     alt="Car"
-                    className="object-fill w-full opacity-60 "
+                    className="object-fill w-full  opacity-60 "
                     loading="lazy"
                   />
                 </div>
                 <div className=" w-full absolute  px-3  bottom-2 left-2  mt-4  flex justify-around items-center font-ethnocentric">
                   {/* Team logo and driver name row */}
-                  <div className=" w-[25%]">
+                  <div className=" w-[25%] lg:w-[24%] ">
                     <img
                       src={teamLogo}
                       alt="Team Logo"
-                      className="w-full]"
+                      className="w-full"
                       loading="lazy"
                     />
                   </div>
 
-                  <div className="text-white lg:text-[15px] font-semibold w-[25%] text-center">
+                  <div className="text-white text-[10px] sm:text-[15px] md:text-[12px] lg:text-[11px] 2xl:text-[14px] font-semibold w-[25%] text-center">
                     {driverName}
                   </div>
 
                   {/* Co-driver name */}
-                  <div className="text-white font-semibold  lg:text-[15px] w-[25%] text-center ">
+                  <div className="text-white font-semibold text-[10px] sm:text-[15px]  md:text-[12px]  lg:text-[11px] 2xl:text-[14px] w-[25%] text-center ">
                     {coDriverName}
                   </div>
                   {/* Car brand logo aligned right */}
-                  <div className=" w-[25%]  flex items-center justify-center">
+                  <div className=" w-[25%] lg:w-[20%]  flex items-center justify-center">
                     <img
                       src={carBrandLogo}
                       alt="Car Brand Logo"
