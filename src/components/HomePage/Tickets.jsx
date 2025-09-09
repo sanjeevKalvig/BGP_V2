@@ -24,7 +24,7 @@ const Tickets = () => {
   return (
     <div className="lg:mb-[6rem] lg:space-y-7 ">
       {/* Heading */}
-      <h2 className="text-2xl lg:text-[1.6rem] xl:text-[1.9rem] 2xl:text-3xl font-bold uppercase flex flex-col">
+      <h2 className="text-2xl lg:text-[1.6rem] xl:text-[1.9rem] 2xl:text-3xl font-bold uppercase flex flex-col  px-4 lg:px-0">
         <span className="font-[Ethnocentric]">Tickets</span>
         <span className="h-[4px] w-[6rem] xl:w-[6.6rem] 2xl:w-[7.3rem] bg-[#C40100] inline-block" />
       </h2>
@@ -79,19 +79,23 @@ const Tickets = () => {
         ))}
       </div>
 
-      <img src="/redlineIMg.svg" alt="" />
+      <img src="/redlineIMg.svg" alt=""  className="m-2"/>
 
       {/* CTA */}
       <div className=" flex flex-col justify-center items-center gap-4 sm:py-10">
         <div className="w-[70%] flex justify-center items-center gap-7">
-          <button className="bg-gradient-to-t from-[#B70000] to-[#510000] hover:bg-red-800 text-white 
-            px-6 py-3 sm:text-[10px] lg:text-sm xl:text-[0.9rem] 2xl:text-[20px] 
-            rounded-[15px] font-bold lg:w-[12rem] xl:w-[14rem] 2xl:w-[16rem]">
+          <button
+            className="bg-gradient-to-t from-[#B70000] to-[#510000] hover:bg-red-800 text-white 
+            px-6 py-3 text-[8px] sm:text-[10px] lg:text-sm xl:text-[0.9rem] 2xl:text-[20px] 
+            rounded-[15px] font-bold lg:w-[12rem] xl:w-[14rem] 2xl:w-[16rem]"
+          >
             Buy Tickets Now
           </button>
-          <button className="bg-gray-800 hover:bg-gray-700 text-white 
-            px-6 py-3 sm:text-[10px] lg:text-sm xl:text-[0.9rem] 2xl:text-[20px] 
-            rounded-[15px] font-bold lg:w-[12rem] xl:w-[14rem] 2xl:w-[16rem]">
+          <button
+            className="bg-gray-800 hover:bg-gray-700 text-white 
+            px-6 py-3  text-[8px] sm:text-[10px] lg:text-sm xl:text-[0.9rem] 2xl:text-[20px] 
+            rounded-[15px] font-bold lg:w-[12rem] xl:w-[14rem] 2xl:w-[16rem]"
+          >
             View Seating Map
           </button>
         </div>
