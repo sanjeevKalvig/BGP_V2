@@ -18,9 +18,9 @@ const TeamsDetails = () => {
           </div>
 
           {/* Bottom: Player Card Container */}
-          <div className=" relative flex flex-row gap-20 mt-[5rem]">
+          <div className=" relative flex flex-col md:flex-row gap-20 mt-[5rem]">
             {/* Player Card 1 */}
-            <div className=" r h-[18rem] shadow-lg  w-72 relative flex flex-col items-center">
+            <div className=" h-[18rem] shadow-lg  w-72 relative flex flex-col items-center">
               <div className="relative h-[80%] w-full bg-gradient-to-b from-[#000000] to-[#470000] "> 
                 {/* Image Section */}
                 <img
@@ -35,7 +35,7 @@ const TeamsDetails = () => {
                   alt="team logo"
                   className="absolute top-2"
                 />
-                <h2 className="mt-2 absolute bottom-0 text-white font-bold text-xl self-start z-[10] -left-12 font-ethnocentric lg:text-[25px]">
+                <h2 className="mt-2 absolute bottom-0 text-white font-bold text-xl self-start z-[10] sm:-left-12 font-ethnocentric lg:text-[25px]">
                   KARAN <span className="text-white">SINGH</span>
                 </h2>
               </div>
@@ -62,7 +62,7 @@ const TeamsDetails = () => {
                   alt="team logo"
                   className="absolute top-2"
                 />
-                <h2 className="mt-2 absolute bottom-0 text-white font-bold text-xl self-start z-[10] -left-12 font-ethnocentric lg:text-[25px]">
+                <h2 className="mt-2 absolute bottom-0 text-white font-bold text-xl self-start z-[10] sm:-left-12 font-ethnocentric lg:text-[25px]">
                   KARAN <span className="text-white">SINGH</span>
                 </h2>
               </div>
@@ -83,10 +83,10 @@ const TeamsDetails = () => {
         </div>
         <div className="min-h-screen my-24 text-white font-sans md:px-[0rem] lg:px-[6rem] flex flex-col gap-8">
           {/* Top: Season Summary */}
-          <div className="w-full  gap-9 flex  ">
+          <div className="w-full  gap-9 sm:flex  ">
             <div className=" md:w-[56%] lg:w-[60%] flex flex-col gap-9">
               {/* 2025 SEASON */}
-              <div className="bg-transparent h-auto p-6  flex-1 flex flex-col gap-4 border text-left rounded-[50px]">
+              <div className="bg-transparent h-auto p-4 sm:p-6  flex-1 flex flex-col gap-4 border text-left rounded-[50px]">
                 <h2 className="text-lg lg:text-[30px]  font-ethnocentric mb-3">
                   2025 SEASON
                 </h2>

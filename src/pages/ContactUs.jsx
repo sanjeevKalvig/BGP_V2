@@ -9,12 +9,12 @@ const ContactUs = () => {
         <div className="relative z-50">
           <Header />
         </div>
-        <img
+        {/* <img
           src="/carbgcon.png"
           alt="bgImage"
           className="absolute top-0 lg:-top-10 z-10 overflow-hidden w-full h-auto object-cover opacity-50"
-        />
-        <div className="flex z-50 py-10 sm:py-16 lg:py-20 relative justify-center items-center overflow-hidden px-4 sm:px-6 lg:px-0">
+        /> */}
+        <div className="flex py-10 sm:py-16 lg:py-20 relative justify-center items-center overflow-hidden px-4 sm:px-6 lg:px-0">
           <div className="w-full sm:w-[85%] lg:w-[70%] bg-[#121212f2] rounded-2xl sm:rounded-[3rem] p-4 sm:p-6 lg:p-[4rem] h-auto lg:h-[650px]">
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold uppercase flex flex-col">
               <span className="font-[Ethnocentric]">Contact Us</span>

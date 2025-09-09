@@ -22,12 +22,18 @@ const Tickets = () => {
     },
   ];
   return (
-    <div className="lg:mb-[6rem] lg:space-y-7 ">
+    <div className="mb-[6rem] lg:space-y-7 ">
       {/* Heading */}
-      <h2 className="text-2xl lg:text-[1.6rem] xl:text-[1.9rem] 2xl:text-3xl font-bold uppercase flex flex-col  px-4 lg:px-0">
+      <h2 className="text-2xl lg:text-[1.6rem] xl:text-[1.9rem] 2xl:text-3xl font-bold uppercase hidden lg:flex flex-col  px-4 lg:px-0">
         <span className="font-[Ethnocentric]">Tickets</span>
         <span className="h-[4px] w-[6rem] xl:w-[6.6rem] 2xl:w-[7.3rem] bg-[#C40100] inline-block" />
       </h2>
+
+        {/* Mobile + tab header */}
+        <h2 className="text-2xl sm:text-[2rem] md:text-[3rem]  font-bold uppercase flex flex-col justify-center items-center lg:hidden gap-2 lg:gap-0 mb-0">
+          <span className="font-[Ethnocentric]">Tickets</span>
+          <span className="h-[4px] w-[6rem] sm:w-[40%] bg-[#C40100] inline-block" />
+        </h2>
 
       {/* Cards */}
       <div className="flex flex-col lg:flex-row h-auto justify-center items-center gap-6 lg:gap-4 xl:gap-6 2xl:gap-8 p-10 lg:p-14 xl:p-16 2xl:p-20 font-montserrat">

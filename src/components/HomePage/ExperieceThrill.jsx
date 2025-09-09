@@ -107,7 +107,7 @@ const ExperieceThrill = () => {
           </div>
         </div>
         {/* Mobile + tab header */}
-        <h2 className="text-2xl sm:text-[2rem] md:text-[3rem]  font-bold uppercase flex flex-col justify-center items-center lg:hidden gap-2 lg:gap-0">
+        <h2 className="text-2xl sm:text-[2rem] md:text-[3rem]  font-bold uppercase flex flex-col justify-center items-center lg:hidden gap-2 lg:gap-0 mt-20">
           <span className="font-[Ethnocentric]"> RACE TRACK</span>
           <span className="h-[4px] w-[6rem] sm:w-[40%] bg-[#C40100] inline-block" />
         </h2>

@@ -68,10 +68,17 @@ const SponsorsSection = () => {
   return (
     <>
       <div className=" w-full px-[6rem] ">
-        <h2 className="text-2xl sm:text-3xl font-bold uppercase flex flex-col left-[4rem]">
+        <h2 className="text-2xl sm:text-3xl font-bold uppercase hidden lg:flex flex-col left-[4rem]">
           <span className="font-[Ethnocentric]">SPONSORS</span>
           <span className="h-[4px] w-[6rem] bg-[#C40100] inline-block"></span>
         </h2>
+
+        {/* Mobile + tab header */}
+        <h2 className="text-2xl sm:text-[2rem] md:text-[3rem]  font-bold uppercase flex flex-col justify-center items-center lg:hidden gap-2 lg:gap-0 mb-0">
+          <span className="font-[Ethnocentric]">SPONSORS</span>
+          <span className="h-[4px] w-[6rem] sm:w-[40%] bg-[#C40100] inline-block" />
+        </h2>
+
       </div>
       <div className="px-4 sm:px-6 md:px-8 lg:px-[6rem] flex flex-col justify-center items-center py-10">
         <div className="flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 lg:p-[6rem] max-w-[1560px] ">

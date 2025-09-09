@@ -40,11 +40,18 @@ const FAQ = () => {
       className=" lg:pt-20 lg:pb-20 sm:pb-16 px-4 py-5 sm:px-8  font-montserrat  flex flex-col gap-[4rem] justify-center radial-gradient "
      
     >
-      <h2 className="text-3xl relative font-bold uppercase  flex flex-col left-[4rem]  ">
-        <span className="font-[Ethnocentric]">FAQ</span>
+      <h2 className="text-3xl relative font-bold uppercase hidden lg:flex flex-col left-[4rem]   ">
+        <span className="font-[Ethnocentric]">FAQS</span>
         <span className="h-[4px] w-[3rem] bg-[#C40100] inline-block "></span>
       </h2>
-      <div className="sm:px-[5rem] max-w-[1920px] m-auto flex flex-col gap-8 items-center w-full  ">
+
+       {/* Mobile + tab header */}
+       <h2 className="text-2xl sm:text-[2rem] md:text-[3rem]  font-bold uppercase flex flex-col justify-center items-center lg:hidden gap-2 lg:gap-0 mb-2">
+          <span className="font-[Ethnocentric]">FAQS</span>
+          <span className="h-[4px] w-[6rem] sm:w-[40%] bg-[#C40100] inline-block" />
+        </h2>
+
+      <div className="sm:px-[4rem] max-w-[1920px] m-auto flex flex-col gap-8 items-center w-full  ">
         <div className="flex flex-col gap-3 sm:gap-5 w-full max-w-[1560px] ">
           {items.map((item, index) => (
             <div

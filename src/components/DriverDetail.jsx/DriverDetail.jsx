@@ -70,10 +70,10 @@ const DriverDetail = () => {
         ></span>
       </div>
 
-      <div className=" text-white font-sans px-[6rem] flex flex-col gap-8 lg:mb-[2rem]">
+      <div className=" text-white font-sans md:px-[0rem] lg:px-[6rem] flex flex-col gap-8 lg:mb-[2rem]">
         {/* Top: Season Summary */}
-        <div className="w-full  gap-9 flex p-[1rem] ">
-          <div className="w-[60%] flex flex-col gap-9">
+        <div className="w-full  gap-9 flex flex-col sm:flex-row p-[1rem] ">
+          <div className="w-full sm:w-[60%] flex flex-col gap-9">
             {/* 2025 SEASON */}
             <div className="bg-transparent h-auto p-6  flex-1 flex flex-col gap-4 border text-left rounded-[50px]">
               <h2 className="text-lg lg:text-[30px]  font-ethnocentric mb-3">
@@ -81,7 +81,7 @@ const DriverDetail = () => {
               </h2>
               <div className="grid grid-cols-2 gap-[3rem] mt-2 ">
                 <div className="space-y-4">
-                  <p className="text-xs text-gray-400 lg:text-[24px]">
+                  <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">
                     Season Position
                   </p>
                   <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -89,7 +89,7 @@ const DriverDetail = () => {
                   </p>
                 </div>
                 <div className="space-y-4">
-                  <p className="text-xs text-gray-400 lg:text-[24px]">
+                  <p className="text-sm text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">
                     Season Points
                   </p>
                   <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -100,7 +100,7 @@ const DriverDetail = () => {
               <div className="h-1 bg-[#383838 lg:lg:my-3"></div>
               <div className="grid grid-cols-2 gap-[3rem] mt-2  ">
                 <div className="space-y-4">
-                  <p className="text-xs text-gray-400 lg:text-[24px]">
+                  <p className="text-xs text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">
                     Grand Prix Wins
                   </p>
                   <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -108,7 +108,7 @@ const DriverDetail = () => {
                   </p>
                 </div>
                 <div className="space-y-4">
-                  <p className="text-xs text-gray-400 lg:text-[24px]">
+                  <p className="text-xs text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">
                     Grand Prix Podiums
                   </p>
                   <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -116,7 +116,7 @@ const DriverDetail = () => {
                   </p>
                 </div>
                 <div className="space-y-4">
-                  <p className="text-xs text-gray-400 lg:text-[24px]">
+                  <p className="text-xs text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">
                     Grand Prix Poles
                   </p>
                   <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -124,7 +124,7 @@ const DriverDetail = () => {
                   </p>
                 </div>
                 <div className="space-y-4">
-                  <p className="text-xs text-gray-400 lg:text-[24px]">
+                  <p className="text-xs text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">
                     Grand Prix Top 10s
                   </p>
                   <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -132,7 +132,7 @@ const DriverDetail = () => {
                   </p>
                 </div>
                 <div className="space-y-4">
-                  <p className="text-xs text-gray-400 lg:text-[24px]">
+                  <p className="text-xs text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">
                     DK: Fastest Laps
                   </p>
                   <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -140,7 +140,7 @@ const DriverDetail = () => {
                   </p>
                 </div>
                 <div className="space-y-4">
-                  <p className="text-xs text-gray-400 lg:text-[24px]">DNS</p>
+                  <p className="text-xs text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">DNS</p>
                   <p className="font-bold  lg:text-[30px] font-ethnocentric">
                     56
                   </p>
@@ -150,7 +150,7 @@ const DriverDetail = () => {
               <div className="h-1 bg-[#383838] lg:my-3"></div>
               <div className="grid grid-cols-2 gap-[3rem] mt-2  ">
                 <div className="space-y-4">
-                  <p className="text-xs text-gray-400 lg:text-[24px]">
+                  <p className="text-xs text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">
                     Grand Prix Wins
                   </p>
                   <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -158,7 +158,7 @@ const DriverDetail = () => {
                   </p>
                 </div>
                 <div className="space-y-4">
-                  <p className="text-xs text-gray-400 lg:text-[24px]">
+                  <p className="text-xs text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">
                     Grand Prix Podiums
                   </p>
                   <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -166,7 +166,7 @@ const DriverDetail = () => {
                   </p>
                 </div>
                 <div className="space-y-4">
-                  <p className="text-xs text-gray-400 lg:text-[24px]">
+                  <p className="text-xs text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">
                     Grand Prix Poles
                   </p>
                   <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -174,7 +174,7 @@ const DriverDetail = () => {
                   </p>
                 </div>
                 <div className="space-y-4">
-                  <p className="text-xs text-gray-400 lg:text-[24px]">
+                  <p className="text-xs text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">
                     Grand Prix Top 10s
                   </p>
                   <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -182,7 +182,7 @@ const DriverDetail = () => {
                   </p>
                 </div>
                 <div className="space-y-4">
-                  <p className="text-xs text-gray-400 lg:text-[24px]">
+                  <p className="text-xs text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">
                     DK: Fastest Laps
                   </p>
                   <p className="font-bold  lg:text-[30px] font-ethnocentric">
@@ -190,7 +190,7 @@ const DriverDetail = () => {
                   </p>
                 </div>
                 <div className="space-y-4">
-                  <p className="text-xs text-gray-400 lg:text-[24px]">DNS</p>
+                  <p className="text-xs text-gray-400 lg:text-[clamp(10px,1.6vw,24px)]">DNS</p>
                   <p className="font-bold  lg:text-[30px] font-ethnocentric">
                     56
                   </p>
@@ -204,7 +204,7 @@ const DriverDetail = () => {
             </div>
           </div>
 
-          <div className=" w-[35%] flex flex-col gap-9 h-[70%]">
+          <div className="w-full sm:w-[35%] flex flex-col gap-9 h-[70%]">
             {/* TEAM SUMMARY */}
             <div className="bg-[#0D0D0D] p-6 flex-1 flex flex-col gap-2 px-[2rem] rounded-[50px]">
               <h2 className="text-sm font-bold tracking-widest mb-3 font-ethnocentric lg:text-[25px]">
@@ -212,7 +212,7 @@ const DriverDetail = () => {
               </h2>
               <div className=" w-full flex flex-col gap-1 lg:my-3">
                 <div className="w-full flex justify-between">
-                  <p className="text-[8px] text-gray-400 lg:text-[17px]">
+                  <p className="text-sm text-gray-400 lg:text-[17px]">
                     Grand Prix Entered
                   </p>
                   <p className="font-bold text-sm lg:text-[21px] font-ethnocentric">
@@ -223,7 +223,7 @@ const DriverDetail = () => {
                 <div className="h-1 bg-[#383838] lg:my-3"></div>
 
                 <div className="w-full flex justify-between">
-                  <p className="text-[8px] text-gray-400 lg:text-[17px]">
+                  <p className="text-sm text-gray-400 lg:text-[17px]">
                     Team Points
                   </p>
                   <p className="font-bold text-sm lg:text-[21px] font-ethnocentric">
@@ -233,7 +233,7 @@ const DriverDetail = () => {
                 {/* Line */}
                 <div className="h-1 bg-[#383838] lg:my-3"></div>
                 <div className="w-full flex justify-between">
-                  <p className="text-[8px] text-gray-400 lg:text-[17px]">
+                  <p className="text-sm text-gray-400 lg:text-[17px]">
                     Highest Race Finish
                   </p>
                   <p className="font-bold text-sm lg:text-[21px] font-ethnocentric">
@@ -243,7 +243,7 @@ const DriverDetail = () => {
                 {/* Line */}
                 <div className="h-1 bg-[#383838] lg:my-3"></div>
                 <div className="w-full flex justify-between">
-                  <p className="text-[8px] text-gray-400 lg:text-[17px]">
+                  <p className="text-sm text-gray-400 lg:text-[17px]">
                     Podiums
                   </p>
                   <p className="font-bold text-sm lg:text-[21px] font-ethnocentric">
@@ -253,7 +253,7 @@ const DriverDetail = () => {
                 {/* Line */}
                 <div className="h-1 bg-[#383838] lg:my-3"></div>
                 <div className="w-full flex justify-between">
-                  <p className="text-[8px] text-gray-400 lg:text-[17px]">
+                  <p className="text-sm text-gray-400 lg:text-[17px]">
                     Highest Grid Position
                   </p>
                   <p className="font-bold text-sm lg:text-[21px] font-ethnocentric">
@@ -263,7 +263,7 @@ const DriverDetail = () => {
                 {/* Line */}
                 <div className="h-1 bg-[#383838] lg:my-3"></div>
                 <div className="w-full flex justify-between">
-                  <p className="text-[8px] text-gray-400 lg:text-[17px]">
+                  <p className="text-sm text-gray-400 lg:text-[17px]">
                     Pole Positions
                   </p>
                   <p className="font-bold text-sm lg:text-[21px] font-ethnocentric">
@@ -273,7 +273,7 @@ const DriverDetail = () => {
                 {/* Line */}
                 <div className="h-1 bg-[#383838] lg:my-3"></div>
                 <div className="w-full flex justify-between">
-                  <p className="text-[8px] text-gray-400 lg:text-[17px]">
+                  <p className="text-sm text-gray-400 lg:text-[17px]">
                     World Championships
                   </p>
                   <p className="font-bold text-sm lg:text-[21px] font-ethnocentric">
@@ -291,13 +291,13 @@ const DriverDetail = () => {
           </div>
         </div>
       </div>
-      <div className="px-[6rem] lg:mb-[6rem]">
-        <div className="flex  flex-col bg-[#0D0D0D] rounded-[50px] p-10 ">
+      <div className="px-[1rem] md:px-[6rem] mb-[6rem]">
+        <div className="flex  flex-col p-5 md:p-10 bg-[#0D0D0D] rounded-[50px]  justify-between">
           <h2 className="uppercase font-ethnocentric lg:text-[40px] text-[#B2B2B2]">
             behind the wheel
           </h2>
-          <div className=" w-full flex lg:mt-[4rem] justify-between ">
-            <p className="lg:text-[30px] w-[41%] text-[#FFFFFF] opacity-80">
+          <div className=" w-full flex flex-col md:flex-row mt-[4rem]  items-center justify-between ">
+            <p className="text-[clamp(13px,2vw,30px)] w-full md:w-[50%] lg:w-[40%] text-[#FFFFFF] opacity-80 ">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took a galley of
@@ -305,7 +305,7 @@ const DriverDetail = () => {
               survived not only five centuries, but also the leap into
               electronic typesetting, remaining essentially unchanged.
             </p>
-            <img src="/driver/driverimg.png" alt="" className="-scale-x-100 lg:h-full " />
+            <img src="/driver/driverimg.png" alt="" className="-scale-x-100 w-[250px] md:w-[35%] lg:w-[50%] h-[250px] lg:h-[420px] " />
           </div>
         </div>
       </div>
