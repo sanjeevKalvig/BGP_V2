@@ -98,7 +98,7 @@ const TeamsPage = () => {
               <div
                 key={id}
                 className=" relative bg-gradient-to-b from-[#000000] to-[#470000] rounded-xl shadow-lg p-4 w-[20rem] h-[17rem]  sm:w-[32rem] sm:h-[18rem] md:w-[22rem] md:h-[17rem]
-                 lg:w-[20rem] lg:h-[14rem] xl:w-[24rem] xl:h-[15rem] 2xl:w-[25rem] 2xl:h-[18rem] overflow-hidden b"
+                 lg:w-[20rem] lg:h-[14rem] xl:w-[24rem] xl:h-[15rem] 2xl:w-[25rem] 2xl:h-[18rem] overflow-hidden "
               >
                 <div className="absolute w-full flex justify-center items-center opacity-40 top-7">
                   <img src={teamLogo} alt="" className="opacity-40 w-[95%]" />
