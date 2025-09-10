@@ -91,11 +91,7 @@ const DriverPage = () => {
         <span className="font-[Ethnocentric]">Drivers</span>
         <span className="h-[4px] w-[6rem] sm:w-[40%] bg-[#C40100] inline-block" />
       </h2>
-<<<<<<< HEAD
-      <div className="w-full flex justify-center items-center  lg:py-[6rem] pb-8">
-=======
-      <div className="w-full flex justify-center items-center py-[2rem]">
->>>>>>> eddc2cf440c38a0710da55d86d9cb73f6d8fd252
+      <div className="w-full flex justify-center items-center lg:py-[6rem] pb-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  mx-auto  sm:gap-5 ">
           {cards.map((card, idx) => (
             <div
