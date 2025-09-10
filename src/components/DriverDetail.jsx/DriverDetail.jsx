@@ -6,37 +6,37 @@ const DriverDetail = () => {
   return (
     <div>
       <Header />
-      <div className=" relative flex w-full   justify-center  py-[6rem] mt-8">
-        <div className=" w-full flex lg:gap-[2rem]  lg:px-[6rem]">
-          <div className="relative w-1/2  flex justify-center items-center">
+      <div className=" relative flex w-full   justify-center py-[3rem]  sm:py-[6rem]">
+        <div className=" w-full flex flex-col lg:flex-row gap-[2rem] px-[2rem] sm:px-[6rem]">
+          <div className="relative  flex justify-center items-center">
             <img
               src="driver/driverimg.png"
               alt="Karan Singh"
-              className="lg:h-[35rem] w-[40rem] relative z-10 -scale-x-100"
+              className=" relative lg:h-[400px] w-[300px] lg:w-[550px] z-10 -scale-x-100"
             />
             <span
-              className="absolute left-5 text-gray-900 lg:text-[15rem] 
+              className="absolute lg:left-0  text-gray-900 text-[clamp(160px,16vw,200px)] 
             font-bold font-ethnocentric z-0"
             >
               44
             </span>
           </div>
-          <div className="h-full w-1 bg-[#FFFFFF]"></div>
-          <div className="w-1/2 pl-8 flex flex-col justify-center items-center ">
-            <div className="mb-4">
+          <div className="w-full h-1 lg:h-full lg:w-1 bg-[#FFFFFF]"></div>
+          <div className="  flex flex-col justify-center items-center ">
+            <div className="mb-4 ">
               <img
                 src="teamlogo.svg"
                 alt="Delhi Eternals"
-                className="lg:h-[15rem]"
+                className="sm:w-[500px]"
               />
             </div>
             <div
-              className="text-white w-[80%] flex flex-col items-start
+              className="text-white flex flex-col
              gap-4"
             >
               {/* Top Row */}
               <div className="flex justify-center items-center gap-3">
-                <p className="text-[48px] font-ethnocentric">#44</p>
+                <p className="text-[clamp(12px,6vw,28px)] sm:text-[48px] font-ethnocentric">#44</p>
                 <div className="h-[80%] w-[0.1rem]  bg-slate-300"></div>
                 <div className="flex items-center gap-2">
                   <img
@@ -44,15 +44,15 @@ const DriverDetail = () => {
                     alt="team flag"
                     className="h-8"
                   />
-                  <p className="text-[32px]">India</p>
+                  <p className="text-[clamp(12px,5vw,24px)] sm:text-[32px]">India</p>
                 </div>
                 <div className="h-[80%] w-[0.1rem]  bg-slate-300"></div>
-                <p className="text-[32px]">Mercedes</p>
+                <p className="text-[clamp(12px,5vw,24px)] sm:text-[32px]">Mercedes</p>
               </div>
 
               {/* Name Row */}
-              <div className="text-left">
-                <h2 className="lg:text-[90px] leading-none font-ethnocentric">
+              <div className="">
+                <h2 className="text-[40px] sm:text-[60px] lg:text-[90px] text-center leading-none font-ethnocentric">
                   KARAN SINGH
                 </h2>
               </div>
@@ -60,12 +60,12 @@ const DriverDetail = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between  items-center px-[4rem]  mb-[2rem]">
-        <h2 className="uppercase lg:text-[50px] font-ethnocentric ">
+      <div className="flex justify-center md:justify-between  items-center px-[4rem]  mb-[2rem]">
+        <h2 className="uppercase text-[24px] lg:text-[50px] font-ethnocentric mt-12 md:mt-0 ">
           Statistics
         </h2>
         <span
-          className="h-0.5 sm:h-1 w-full sm:w-[60%] bg-[#C40100] inline-block
+          className="h-0.5 sm:h-1 w-full sm:w-[60%] bg-[#C40100] hidden md:inline-block
          mt-2 sm:mt-0 "
         ></span>
       </div>
@@ -296,7 +296,7 @@ const DriverDetail = () => {
           <h2 className="uppercase font-ethnocentric lg:text-[40px] text-[#B2B2B2]">
             behind the wheel
           </h2>
-          <div className=" w-full flex flex-col md:flex-row mt-[4rem]  items-center justify-between ">
+          <div className=" w-full flex flex-col md:flex-row mt-[2rem] md:mt-[4rem]  items-center justify-between ">
             <p className="text-[clamp(13px,2vw,30px)] w-full md:w-[50%] lg:w-[40%] text-[#FFFFFF] opacity-80 ">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
