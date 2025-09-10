@@ -65,11 +65,11 @@ const DriverPage = () => {
       <Header />
 
       {/* Header section with background text */}
-      <div className="relative flex flex-col sm:flex-row items-center justify-between  my-[4rem] lg:mt-[12rem] lg:mb-[4rem] px-[6rem] font-ethnocentric">
+      <div className="relative hidden sm:flex flex-col sm:flex-row items-center justify-between sm:mt-[6rem] xl:mt-[12rem] px-[6rem] font-ethnocentric ">
         {/* Big background text */}
         <span
-          className="absolute left-[4rem] top-[30%] -translate-y-1/2 text-5xl sm:text-6xl md:text-[70px] 
-          lg:text-[120px] font-extrabold text-[#B2B2B2]/10 select-none pointer-events-none tracking-wide"
+          className="absolute left-[4rem] top-[30%] -translate-y-1/2 text-5xl sm:text-6xl md:text-[70px] lg:text-[80px]
+          xl:text-[120px] font-extrabold text-[#B2B2B2]/10 select-none pointer-events-none tracking-wide"
         >
           DRIVERS
         </span>
@@ -83,9 +83,15 @@ const DriverPage = () => {
         </div>
 
         {/* Red line on right */}
-        <span className="hidden sm:inline-block h-1 w-1/4 bg-[#C40100]"></span>
+        <span className="hidden  h-1 w-1/4 sm:hidden lg:block bg-[#C40100]"></span>
       </div>
-      <div className="w-full flex justify-center items-center  lg:py-[6rem] pb-8">
+
+      {/* Mobile + tab header */}
+      <h2 className="text-2xl sm:text-[2rem] md:text-[3rem]  font-bold uppercase flex flex-col justify-center items-center lg:hidden gap-2 lg:gap-0 mb-2 mt-10 sm:hidden">
+        <span className="font-[Ethnocentric]">Drivers</span>
+        <span className="h-[4px] w-[6rem] sm:w-[40%] bg-[#C40100] inline-block" />
+      </h2>
+      <div className="w-full flex justify-center items-center py-[2rem]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  mx-auto  sm:gap-5 ">
           {cards.map((card, idx) => (
             <div

@@ -3,30 +3,36 @@ import Footer from "../components/HomePage/Footer";
 
 const TicketsPage = () => {
   return (
-    <div className=" space-y-[4rem]">
+    <div className="">
       <Header />
       {/* Header section with background text */}
-      <div className="relative flex flex-col sm:flex-row px-[4rem] items-center justify-between mb-6 sm:mb-8 md:mb-[3rem] font-[Ethnocentric]">
+      <div className="relative hidden sm:flex flex-col sm:flex-row items-center justify-between lg:mb-[8rem] sm:mt-[6rem] xl:mt-[12rem] px-[6rem] font-ethnocentric ">
         {/* Big background text */}
         <span
-          className="absolute w-full sm:w-1/2 left-0 top-1/2 -translate-y-1/2 text-5xl 
-          sm:text-6xl md:text-[70px] lg:text-[120px] font-extrabold text-[#B2B2B2]/10 select-none 
-          pointer-events-none tracking-wide px-[4rem]"
+          className="absolute left-[4rem] top-[30%] -translate-y-1/2 text-5xl sm:text-6xl md:text-[70px] lg:text-[80px]
+          xl:text-[120px] font-extrabold text-[#B2B2B2]/10 select-none pointer-events-none tracking-wide"
         >
           TICKETS
         </span>
 
         {/* Foreground small header */}
-        <div className="z-10 flex flex-col items-center mt-6 sm:mt-8 md:mt-10 translate-x-0 sm:translate-x-11 ">
-          <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white px-2 sm:px-3 py-1 mr-0 sm:mr-3 relative">
+        <div className="z-10 flex flex-col items-start">
+          <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white">
             TICKETS
           </span>
-          <span className="h-[2px] w-[6rem] sm:w-[8rem] md:w-[10rem] bg-[#C40100] inline-block"></span>
+          <span className="h-[2px] w-[8rem] md:w-[10rem] bg-[#C40100] inline-block mt-2"></span>
         </div>
-        {/* Red line */}
-        <span className="h-0.5 sm:h-1 w-full sm:w-1/3 bg-[#C40100] inline-block mt-2 sm:mt-0"></span>
+
+        {/* Red line on right */}
+        <span className="hidden  h-1 w-1/4 sm:hidden lg:block bg-[#C40100]"></span>
       </div>
-      <div className="px-[2rem] sm:px-[6rem] space-y-20">
+
+      {/* Mobile + tab header */}
+      <h2 className="text-2xl sm:text-[2rem] md:text-[3rem]  font-bold uppercase flex flex-col justify-center items-center lg:hidden gap-2 lg:gap-0 mb-[2rem] mt-10 sm:hidden">
+        <span className="font-[Ethnocentric]">Tickets</span>
+        <span className="h-[4px] w-[6rem] sm:w-[40%] bg-[#C40100] inline-block" />
+      </h2>
+      <div className="px-[2rem] sm:px-[6rem] space-y-20 pb-[4rem] sm:pb-[8rem]">
         <div className=" flex flex-col sm:flex-row items-center gap-7 ">
           <div
             className="relative bg-gradient-to-t from-[#242424] to-[#000000] w-[85%] lg:w-[32%] xl:w-[27%] 2xl:w-[20%]
@@ -60,11 +66,11 @@ const TicketsPage = () => {
               PURCHASE
             </button>
           </div>
-          <div className="flex flex-col  sm:w-[60%] ">
-            <h2 className="uppercase  lg:text-[40px] font-ethnocentric">
+          <div className="flex flex-col  sm:w-[60%]">
+            <h2 className="uppercase  lg:text-[40px] font-ethnocentric mx-auto">
               THE essential experience{" "}
             </h2>
-            <p className="text-[16px] font-montserrat">
+            <p className="text-[16px] font-montserrat mx-auto sm:mx-0">
               The Essential ExperienceGet full-day access to the racing action
               from general  stands. Feel the roar of the engines and
               witness 
@@ -75,7 +81,7 @@ const TicketsPage = () => {
         <div className="flex flex-col-reverse  sm:flex-row items-center   justify-end  gap-10 sm:text-right">
           {/* Text Section */}
           <div className="flex flex-col sm:w-[70%]">
-            <h2 className="uppercase lg:text-[40px] font-ethnocentric">
+            <h2 className="uppercase lg:text-[40px] font-ethnocentric mx-auto sm:mx-0">
               Behind the Scenes Access
             </h2>
             <p className="text-[16px] font-montserrat">
@@ -150,7 +156,7 @@ const TicketsPage = () => {
             </button>
           </div>
           <div className="flex flex-col sm:w-[60%] ">
-            <h2 className="uppercase  lg:text-[40px] font-ethnocentric">
+            <h2 className="uppercase  lg:text-[40px] font-ethnocentric mx-auto sm:mx-0">
               THE essential experience{" "}
             </h2>
             <p className="text-[16px] font-montserrat">

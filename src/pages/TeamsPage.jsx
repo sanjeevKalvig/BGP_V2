@@ -79,10 +79,10 @@ const TeamsPage = () => {
       </div>
 
       {/* Mobile + tab header */}
-       <h2 className="text-2xl sm:text-[2rem] md:text-[3rem]  font-bold uppercase flex flex-col justify-center items-center lg:hidden gap-2 lg:gap-0 mb-2 mt-10 sm:hidden">
-          <span className="font-[Ethnocentric]">Teams</span>
-          <span className="h-[4px] w-[6rem] sm:w-[40%] bg-[#C40100] inline-block" />
-        </h2>
+      <h2 className="text-2xl sm:text-[2rem] md:text-[3rem]  font-bold uppercase flex flex-col justify-center items-center lg:hidden gap-2 lg:gap-0 mb-2 mt-10 sm:hidden">
+        <span className="font-[Ethnocentric]">Teams</span>
+        <span className="h-[4px] w-[6rem] sm:w-[40%] bg-[#C40100] inline-block" />
+      </h2>
 
       <div className="min-h-screen bg-black flex items-center justify-center p-2 sm:p-8  ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

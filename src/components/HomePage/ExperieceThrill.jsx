@@ -193,7 +193,7 @@ const ExperieceThrill = () => {
             </div>
           </div>
         </div>
-        <p className="w-full bg-black text-white px-14 sm:text-[15px] text-[10px]  lg:text-[18px] xl:text-[23px]">
+        <p className="w-full bg-black text-white px-3 sm:px-14 sm:text-[15px] text-[13px]  lg:text-[18px] xl:text-[23px]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
           dolore, delectus repellat tempore sam doloremque itaque sequi fuga
           sint repellendus ea quae, exercitationem repudiandae veritatis,

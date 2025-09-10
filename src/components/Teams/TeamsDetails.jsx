@@ -76,12 +76,12 @@ const TeamsDetails = () => {
           </div>
         </div>
         <div className="flex justify-between  items-center ">
-          <h2 className="uppercase lg:text-[50px] font-ethnocentric ">
+          <h2 className="uppercase text-[36px] mx-auto lg:mx-0 lg:text-[50px] font-ethnocentric ">
             Statistics
           </h2>
-          <span className="h-0.5 sm:h-1 w-full sm:w-[60%] bg-[#C40100] inline-block mt-2 sm:mt-0"></span>
+          <span className="h-0.5 sm:h-1 w-full md:w-[60%] bg-[#C40100] hidden  md:inline-block mt-2 sm:mt-0"></span>
         </div>
-        <div className="min-h-screen my-24 text-white font-sans md:px-[0rem] lg:px-[6rem] flex flex-col gap-8">
+        <div className="min-h-screen my-8 lg:my-24 text-white font-sans md:px-[0rem] lg:px-[6rem] flex flex-col gap-8">
           {/* Top: Season Summary */}
           <div className="w-full  gap-9 sm:flex  ">
             <div className=" md:w-[56%] lg:w-[60%] flex flex-col gap-9">
