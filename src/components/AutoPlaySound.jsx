@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import "./AutoPlaySound.css";
 
-export default function AutoPlaySound() {
+export default function AutoPlaySound({ onFinish }) {
   const audioRef = useRef(null);
   const [loading, setLoading] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
@@ -28,7 +28,8 @@ export default function AutoPlaySound() {
     // Remove loading screen after animation
     setTimeout(() => {
       setLoading(false);
-    }, 800); // match with animation duration
+      if (onFinish) onFinish(); // ✅ notify App that it's done
+    }, 800);
   };
 
   return (
@@ -36,12 +37,11 @@ export default function AutoPlaySound() {
       {loading && (
         <div
           onClick={handleStart}
-          className={`overlay fixed inset-0 flex flex-col  items-center bg-black text-white transition-all duration-700 ease-out ${
-            fadeOut ? "opacity-0 scale-110" : "opacity-100 scale-100"
-          }`}
+          className={`overlay fixed inset-0 flex flex-col items-center bg-black text-white transition-all duration-700 ease-out ${fadeOut ? "opacity-0 scale-110" : "opacity-100 scale-100"
+            }`}
         >
-          <div className=" logo-container flex flex-col justify-end  items-center   ">
-            <div className="flex flex-col  items-center mb-[15%] gap-10">
+          <div className="logo-container flex flex-col justify-end items-center">
+            <div className="flex flex-col items-center mb-[15%] gap-10">
               <img
                 src="/logo.png"
                 alt="Logo"
@@ -51,7 +51,6 @@ export default function AutoPlaySound() {
                 INDIA'S PREMIER MOTORSPORT <br /> CHAMPIONSHIP
               </h1>
             </div>
-
             <p className="click-text lg:text-[30px]">Click to Start</p>
           </div>
         </div>
@@ -60,3 +59,4 @@ export default function AutoPlaySound() {
     </>
   );
 }
+

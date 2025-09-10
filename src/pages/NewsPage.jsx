@@ -46,12 +46,12 @@ const NewsPage = () => {
   return (
     <div className=" ">
       <Header />
-      {/* Header section with background text */}
-      <div className="relative flex flex-col sm:flex-row items-center justify-between mt-[2rem] lg:mt-[15rem] px-[6rem] font-ethnocentric">
+       {/* Header section with background text */}
+       <div className="relative hidden sm:flex flex-col sm:flex-row items-center justify-between sm:mt-[6rem] xl:mt-[12rem] px-[6rem] font-ethnocentric ">
         {/* Big background text */}
         <span
-          className="absolute left-[4rem] top-[30%] -translate-y-1/2 text-5xl sm:text-6xl md:text-[70px] 
-          lg:text-[120px] font-extrabold text-[#B2B2B2]/10 select-none pointer-events-none tracking-wide"
+          className="absolute left-[4rem] top-[30%] -translate-y-1/2 text-5xl sm:text-6xl md:text-[70px] lg:text-[80px]
+          xl:text-[120px] font-extrabold text-[#B2B2B2]/10 select-none pointer-events-none tracking-wide"
         >
           LATEST NEWS
         </span>
@@ -65,8 +65,14 @@ const NewsPage = () => {
         </div>
 
         {/* Red line on right */}
-        <span className="hidden sm:inline-block h-1 w-[10%] bg-[#C40100]"></span>
+        <span className="hidden  h-1 w-1/4 sm:hidden lg:block bg-[#C40100]"></span>
       </div>
+
+      {/* Mobile + tab header */}
+       <h2 className="text-2xl sm:text-[2rem] md:text-[3rem]  font-bold uppercase flex flex-col justify-center items-center lg:hidden gap-2 lg:gap-0 mb-2 mt-10 sm:hidden">
+          <span className="font-[Ethnocentric]">Latest News</span>
+          <span className="h-[4px] w-[6rem] sm:w-[40%] bg-[#C40100] inline-block" />
+        </h2>
 
       <div className="px-[2rem] sm:px-[6rem] w-full  flex flex-col justify-center  h-auto mt-[2rem] lg:mt-[6rem] space-y-7">
         <div className=" lg:h-[600px] w-full">
@@ -84,7 +90,7 @@ const NewsPage = () => {
           industry
         </p>
       </div>
-      <div className="px-[2rem] sm:px-[6rem] w-full flex  justify-center items-center lg:mt-[6rem] lg:mb-[1rem] ">
+      <div className="px-[2rem] sm:px-[6rem] w-full flex  justify-center items-center mt-[2rem] lg:mt-[6rem] mb-[1rem] ">
         {/* Red line on right */}
         <div className=" sm:inline-block h-1 w-full bg-[#C40100]"></div>
       </div>

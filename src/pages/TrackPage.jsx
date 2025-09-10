@@ -34,26 +34,32 @@ const TrackPage = () => {
     <div>
       <Header />
       {/* Header section with background text */}
-      <div className="relative flex flex-col sm:flex-row px-[4rem] items-center justify-between mb-6 sm:mb-8 md:mb-[3rem] font-[Ethnocentric] lg:mt-[8rem]">
+      <div className="relative hidden sm:flex flex-col sm:flex-row items-center justify-between  sm:mt-[6rem] xl:mt-[12rem] px-[6rem] font-ethnocentric ">
         {/* Big background text */}
         <span
-          className="absolute w-full sm:w-1/2 left-0 top-1/2 -translate-y-1/2 text-5xl 
-          sm:text-6xl md:text-[70px] xl:text-[120px] font-extrabold text-[#B2B2B2]/10 select-none 
-          pointer-events-none tracking-wide px-[4rem]"
+          className="absolute left-[4rem] top-[30%] -translate-y-1/2 text-5xl sm:text-6xl md:text-[70px] lg:text-[80px]
+          xl:text-[120px] font-extrabold text-[#B2B2B2]/10 select-none pointer-events-none tracking-wide"
         >
           TRACKS
         </span>
 
         {/* Foreground small header */}
-        <div className="z-10 flex flex-col items-center mt-6 sm:mt-8 md:mt-10 translate-x-0 sm:translate-x-11 ">
-          <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white px-2 sm:px-3 py-1 mr-0 sm:mr-3 relative">
+        <div className="z-10 flex flex-col items-start">
+          <span className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white">
             TRACKS
           </span>
-          <span className="h-[2px] w-[6rem] sm:w-[8rem] md:w-[10rem] bg-[#C40100] inline-block"></span>
+          <span className="h-[2px] w-[8rem] md:w-[10rem] bg-[#C40100] inline-block mt-2"></span>
         </div>
-        {/* Red line */}
-        <span className="h-0.5 sm:h-1 w-full sm:w-[45%] bg-[#C40100] inline-block mt-2 sm:mt-0"></span>
+
+        {/* Red line on right */}
+        <span className="hidden  h-1 w-1/4 sm:hidden lg:block bg-[#C40100]"></span>
       </div>
+
+      {/* Mobile + tab header */}
+      <h2 className="text-2xl sm:text-[2rem] md:text-[3rem]  font-bold uppercase flex flex-col justify-center items-center lg:hidden gap-2 lg:gap-0 mb-[2rem] mt-10 sm:hidden">
+        <span className="font-[Ethnocentric]">Tracks</span>
+        <span className="h-[4px] w-[6rem] sm:w-[40%] bg-[#C40100] inline-block" />
+      </h2>
 
       <div
         relative
